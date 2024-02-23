@@ -1,0 +1,30 @@
+import React, { useState } from 'react'
+
+import NavBar from '../layouts/nav'
+
+export default function Wrapper({ children }) {
+  const NAV_WIDTH = 240; 
+  const [drawerOpen, setDrawerOpen] = useState(false);
+  const handleToggleDrawer = () => {
+    setDrawerOpen(!drawerOpen);
+  };
+  
+  const handleNavLinkClick = (id) => {
+    const targetElement = document.getElementById(id.split('#')[1]);
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  return (
+    <> 
+    <NavBar  {...{
+          handleToggleDrawer,
+          drawerOpen,
+          NAV_WIDTH,
+          handleNavLinkClick,
+        }}/> 
+    {children}
+    </>
+  )
+}

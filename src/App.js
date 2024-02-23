@@ -16,6 +16,7 @@ import Footer from './layouts/Footer';
 import Timeline from './pages/landing-page/Timeline';
 import Contact from './pages/landing-page/Contact';
 import Top from './pages/landing-page/Top';
+import AppRoute from './routes';
 
 const theme = createTheme ({
   typography: {
@@ -28,18 +29,7 @@ const theme = createTheme ({
 
 function App() {
 
-  const NAV_WIDTH = 240; 
-  const [drawerOpen, setDrawerOpen] = useState(false);
-  const handleToggleDrawer = () => {
-    setDrawerOpen(!drawerOpen);
-  };
-  
-  const handleNavLinkClick = (id) => {
-    const targetElement = document.getElementById(id);
-    if (targetElement) {
-      targetElement.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+
 
   // useEffect(() => {
   //   const scrollToHash = () => {
@@ -64,50 +54,12 @@ function App() {
   // }, []);
 
   return (
+    <>
     <ThemeProvider theme={theme}>
-      <NavBar {...{
-        handleToggleDrawer,
-        drawerOpen,
-        NAV_WIDTH,
-        handleNavLinkClick,
-      }}/>
-      <section id='top' className=''>
-        <Top />
-      </section>
-      <section id='services' className='pt-[5.5rem] lg:pt-20 z-10'>
-        <Services />
-      </section>
-      <section id='about' className='pt-20'>
-        <About />
-      </section>
-      <section id='portfolio' className='pt-20'>
-        <Portfolio />
-      </section>
-      <section id='pricing' className='pt-20'>
-        <Pricing />
-      </section>
-      <section id='testimonial' className='pt-20'>
-        <Testimonial />
-      </section>
-      <section id='partners' className=''>
-        <Partners />
-      </section>
-      <section id='blog' className='pt-20'>
-        <Blog />
-      </section>
-      <section id='skills' className='pt-20'>
-        <Skills />
-      </section>
-      <section id='timeline' className='pt-20'>
-        <Timeline />
-      </section>
-      <section id='contact' className='pt-20'>
-        <Contact />
-      </section>
-      <section id='footer' className=''>
-        <Footer />
-      </section>
+      <AppRoute />
     </ThemeProvider>
+     
+     </>
   );
 }
 

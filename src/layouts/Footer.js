@@ -10,15 +10,16 @@ function Footer() {
   ]
   return (
     <div className='w-full pt-5 h-[26vh] justify-center items-center flex flex-col gap-2'>
-       <div className='w-full flex justify-center items-center gap-7'>
+      <div className='w-full flex justify-center items-center gap-7'>
        {
         links.map((l, index) => (
           <img key={index} className='w-10 h-10' src={l.img} alt=''/>
         ))
        }
       </div>
-      <div className='w-full flex  justify-center items-center gap-7'> 
-        <Header text={`@${new Date(Date.now()).getFullYear()} software solutions`}/>
+      <div className='w-full self-center flex  justify-center items-center gap-7'> 
+      <h1>{`@${new Date(Date.now()).getFullYear()} software solutions`}</h1>
+        {/* <Header text={`@${new Date(Date.now()).getFullYear()} software solutions`}/> */}
       </div>
     </div>
   )

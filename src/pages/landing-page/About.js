@@ -33,6 +33,35 @@ export default function About() {
           </div>
           
           {/* <TitlebarImageList />  */}
+          {/* <div className="cacobasic-carousel-image-slider">
+                                <div id="about-slider" className="carousel-slider-wrapper relative swiper-container swiper-initialized swiper-horizontal swiper-backface-hidden">
+                                    <div className="swiper-wrapper slider" id="swiper-wrapper-b2fda0105cc22a4510" aria-live="polite">
+                                        <div className="swiper-slide swiper-slide-active" role="group" aria-label="1 / 3" style={{marginRight: '30px'}}>
+                                            <div className="swiper-slide-img-holder">
+                                                <img src="images/about_03.jpg" alt="About 3"/>
+                                                <p className="swiper-slide-number">01</p>
+                                                <p className="swiper-slide-caption-text">Home Office</p>
+                                            </div>
+                                        </div>
+                                        <div className="swiper-slide swiper-slide-next" role="group" aria-label="2 / 3" style={{marginRight: '30px'}}>
+                                            <div className="swiper-slide-img-holder">
+                                                <img src="images/about_02.jpg" alt="About 2"/>
+                                                <p className="swiper-slide-number">02</p>
+                                                <p className="swiper-slide-caption-text">Sarah Stone</p>
+                                            </div>
+                                        </div>
+                                        <div className="swiper-slide" role="group" aria-label="3 / 3" style={{marginRight: '30px'}}>
+                                            <div className="swiper-slide-img-holder">
+                                                <img src="images/about_01.jpg" alt="About 1"/>
+                                                <p className="swiper-slide-number">03</p>
+                                                <p className="swiper-slide-caption-text">Designer Team</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="clear"></div>    
+                                <span className="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div> 
+                                <div className="swiper-scrollbar swiper-scrollbar-about-slider swiper-scrollbar-horizontal"><div className="swiper-scrollbar-drag" style={{transform: `translate3d('0px', '0px', '0px')`,  width: '120px'}}></div></div>
+                            </div> */}
         </div>
       </div>
       <div className='bg-primary pb-[60px] lg:flex lg:justify-center lg:items-center'>

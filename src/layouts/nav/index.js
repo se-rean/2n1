@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import AppBar from '@mui/material/AppBar';
+import { useNavigate } from 'react-router-dom';
 import {
   Box, 
   Toolbar,
@@ -29,13 +30,34 @@ const customStyle = {
 }
 
 function RenderContent({type, handleToggleDrawer, handleNavLinkClick}) {
+  const navigate = useNavigate()
   const [focus, setFocus] = useState()
   function handleFocus(key, id) {
     setFocus(key)
     handleToggleDrawer()
-    handleNavLinkClick(id)
-    console.log(focus)
+    handleNavLinkClick(id) 
   }
+
+  const handleRedirect = (id, link) => { 
+    // console.log(window.location)
+    if(window.location.pathname === `/`) {
+      window.location.hash = ""
+      handleFocus(id, link)
+    } else {
+      // console.log(link)
+      // window.location.hash = `${link}` 
+      navigate(`/${link}`)
+    }
+  }
+
+  useEffect(() => {
+    if (window.location.hash) {
+      setTimeout(() => {
+        handleFocus(0, window.location.hash)
+        window.history.replaceState("", document.title, window.location.pathname);
+      }, 1000)
+    }
+  }, [window.location.hash])
 
   return (
     <ul className={`${ type === 'desktop' && 'flex' } lg:p-10`}>
@@ -43,7 +65,7 @@ function RenderContent({type, handleToggleDrawer, handleNavLinkClick}) {
         nav && nav.map((i, index) => (
             // eslint-disable-next-line jsx-a11y/anchor-is-valid
             <a key={index}>
-              <li style={customStyle} className={`list-none hover:cursor-pointer ${ focus === index ? 'text-primaryText' : 'text-secondary'} hover:text-primaryText`} onClick={() => handleFocus(index, i.link.split('#')[1])} key={index}>
+              <li style={customStyle} className={`list-none hover:cursor-pointer ${ focus === index ? 'text-primaryText ' : 'text-secondary'} hover:text-primaryText`} onClick={() => handleRedirect(index, i.link)} key={index}>
                   <p style={customStyle}>{i.label}</p>
               </li>
             </a>
