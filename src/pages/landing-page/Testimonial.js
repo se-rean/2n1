@@ -3,25 +3,9 @@ import TestimonialCard from '../../components/TestimonialCard'
 import Header from '../../components/Header';
 import PageNumber from '../../components/PageNumber';
 import HeaderText from '../../components/HeaderText'; 
+import { testimonialData } from '../../constant/Data';
 function Testimonial() {
  
-
-  const testimonialContent = [
-    {
-      name: 'JASON BROWNE',
-      message: `“Working with Jayciel on social media content has been a game-changer for our brand. The visual and captions are not only eye-catching but also resonate perfectly with our target audience. Exceptional work, and we're excited for more!”`,
-      position: 'Business Owner',
-      src: require('../../assets/CLIENT TESTIMONIAL-1.png')
-    },
-    {
-      name: 'Svitlana Narchuk',
-      message: '“Rene is a Good Web Developer, it was nice to work with him, I recommend him”',
-      position: 'CEO',
-      src: require('../../assets/CLIENT TESTIMONIAL-2.png')
-    },
-  ]
- 
-
   return (
      <div className='flex flex-col pl-3 pr-3 pb-20 pt-10 bg-[#1b212c] lg:justify-center lg:items-center'>
        <Header text="TESTIMONIAL"/>
@@ -39,7 +23,7 @@ function Testimonial() {
           <div className='snap-mandatory py-20 px-5  lg:gap-10 snap-x flex   lg:w-[1000px] testimonial'>
             {/* <Swipper items={3} > */}
               {
-                testimonialContent.map(t => (
+                testimonialData.map(t => (
                   <div className='snap-start pr-4 lg:row-span-1'>
                     <TestimonialCard 
                     className="snap-start"

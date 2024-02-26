@@ -4,42 +4,9 @@ import Card from '../../components/Card'
 import PageNumber from '../../components/PageNumber'
 import HeaderText from '../../components/HeaderText'
 import { useNavigate } from 'react-router-dom/dist'
- 
+ import { servicesData } from '../../constant/Data'
 export default function Services() {
   const navigate = useNavigate();
-  const services = [
-    { 
-      header: '01', 
-      title: 'VIRTUAL ASSISTANCE', 
-      desc:[
-      `Welcome to 2in1 Promotions & VA
-      Solutions, where we redefine
-      productivity and efficiency through
-      our top-notch Virtual Assistance
-      services. `],
-      path: '/services'
-    },
-    { 
-      header: '02', 
-      title: 'WEB DEVELOPMENT', 
-      desc:[
-      `At 2in1, we are committed to
-      bringing your digital vision to life
-      through our comprehensive Web
-      Development services. `,
-      ], path: '/services'
-    },
-    { 
-      header: '03', 
-      title: 'DIGITAL MARKETING', 
-      desc:[
-      `Unlock the full potential of your
-      online presence with our
-      comprehensive Digital Marketing
-      services.`,],
-      path: '/services'
-      },
-  ]
 
   return (
     <div className='flex flex-col pl-3 pr-3 pt-10 gap-14 lg:justify-center lg:items-center z-10'> 
@@ -52,7 +19,7 @@ export default function Services() {
 
         <div className='flex flex-col lg:justify-center items-center  gap-10   lg:flex-row lg:gap-[0rem]  mb-5'>
           {
-            services.map((item, index) => (
+            servicesData.map((item, index) => (
               <div onClick={() => navigate(item.path)} className='lg:h-[50vh] lg:w-[20rem] w-full lg:flex lg:flex-col lg:justify-end overflow-x-hidden cursor-pointer '>
                 <Card title={item.title} header={item.header} subtitle={item.desc} />
               </div>

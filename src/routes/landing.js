@@ -26,32 +26,29 @@ export default function LandingPage() {
       <section id='about' className='pt-20'>
         <About />
       </section>
-      <section id='portfolio' className='pt-20'>
+      <section id='portfolio' className='pt-20 bg-[#1b212c]'>
         <Portfolio />
       </section>
       <section id='pricing' className='pt-20'>
         <Pricing />
       </section>
-      <section id='testimonial' className='pt-20'>
+      <section id='testimonial' className='pt-20 '>
         <Testimonial />
       </section>
-      <section id='partners' className=''>
+      <section id='partners' className='pt-20 bg-[#1b212c]'>
         <Partners />
       </section>
       <section id='blog' className='pt-20'>
         <Blog />
       </section>
-      <section id='skills' className='pt-20'>
+      <section id='skills' className='pt-20 bg-[#1b212c]'>
         <Skills />
       </section>
       <section id='timeline' className='pt-20'>
         <Timeline />
       </section>
-      <section id='contact' className='pt-20'>
+      <section id='contact' className='pt-20 bg-[#1b212c]'>
         <Contact />
-      </section>
-      <section id='footer' className=''>
-        <Footer />
       </section>
       </>
   )

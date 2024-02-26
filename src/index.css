@@ -360,3 +360,9 @@ px
   border-radius: 0;
   cursor: pointer
 }
+
+@layer components {
+  .content-container {
+    @apply flex flex-col pl-3 pr-3 pt-20  lg:justify-center lg:items-center gap-14 z-10
+  }
+}

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import AppBar from '@mui/material/AppBar';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import {
   Box, 
   Toolbar,
@@ -11,6 +11,7 @@ import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
 import { Menu as MenuIcon, Close} from '@mui/icons-material/';
 import nav from '../nav-items';
+
 const variants = {
   open: { opacity: 1, x: 0 },
   closed: { opacity: 0, x: "-100%" },
@@ -31,6 +32,7 @@ const customStyle = {
 
 function RenderContent({type, handleToggleDrawer, handleNavLinkClick}) {
   const navigate = useNavigate()
+
   const [focus, setFocus] = useState()
   function handleFocus(key, id) {
     setFocus(key)
@@ -83,6 +85,7 @@ export default function NavBar({
   handleNavLinkClick
 }) {
     const [scrollPosition, setScrollPosition] = useState(0);
+    const navigate = useNavigate()
 
   const handleScroll = () => {
     const position = window.pageYOffset;
@@ -96,7 +99,7 @@ export default function NavBar({
           window.removeEventListener('scroll', handleScroll);
       };
   }, []);
-  const isDesktop = useResponsive('up', 'sm'); 
+  const isDesktop = useResponsive('up', 'xl'); 
   return (
    
     <Box className="z-20" sx={{
@@ -109,8 +112,8 @@ export default function NavBar({
       <AppBar sx={{ boxShadow: 0, background: `${scrollPosition > 0 ? "#1b212c" : "rgba(0, 0, 0, 0.01)"}`, opacity: 1, height: '80px', justifyContent: 'space-between',
       padding: '0px 10px', }} position="static">
         <Toolbar >
-              <Typography  variant="h6" component="div" sx={{ flexGrow: 1 }}>  
-                <img  hidden={!isDesktop && drawerOpen } className="w-[100px] fixed top-4 lg:left-[12rem]" alt='' src='https://2in1.com.au/wp-content/uploads/2023/07/NEWCIRCLELOGOwithQR-TR.png'/>
+              <Typography  variant="h6" component="div" sx={{ flexGrow: 1 }}>   
+                <img onClick={() => window.location = '/'} hidden={!isDesktop && drawerOpen } className="w-[100px] fixed top-4 lg:left-[12rem] cursor-pointer" alt='' src='https://2in1.com.au/wp-content/uploads/2023/07/NEWCIRCLELOGOwithQR-TR.png'/> 
               </Typography> 
                 { !isDesktop && <IconButton
                   onClick={() => handleToggleDrawer()}

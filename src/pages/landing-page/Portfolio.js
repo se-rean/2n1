@@ -4,52 +4,33 @@ import PageNumber from '../../components/PageNumber';
 import HeaderText from '../../components/HeaderText';
 import Swipper from '../../components/Swipper';
 import Modal from '../../components/Dialog';
-
+import { PortfolioData, portfolioFilter } from '../../constant/Data';
 function Portfolio() {
-
-  const filter = [
-    { label: 'All', value: 'all' },
-    { label: 'Virtual Assistance', value: 'Virtual Assistance' },
-    { label: 'Web Development', value: 'Web Development' },
-    { label: 'Digital Marketing', value: 'Digital Marketing' }, 
-  ]
-
-  const content = [
-    { type: 'Virtual Assistance', src: require('../../assets/BLOG POST-1.png'), title: 'BLOG POST', subTitle: 'asdasd', row:2},
-    { type: 'Virtual Assistance', src: require('../../assets/BLOG POST-2.png'), title: 'LOGO CREATION', subTitle: 'asdasd', row: 2 },
-    { type: 'Virtual Assistance', src: require('../../assets/LOGO CREATION.png'), title: 'LOGO CREATION', subTitle: 'asdasd', row: 2 },
-    { type: 'Virtual Assistance', src: require('../../assets/PORTFOLIO-1.png'), title: 'Content Creation', subTitle: 'asdasd', row: 2 },
-    { type: 'Web Development', src: require('../../assets/_2in1- WEB DEVELOPMENT.png'), title: 'asdasd', subTitle: 'dsad',row: 2 }, 
-    { type: 'Web Development', src: require('../../assets/_2in1- WEB DEVELOPMENT (1).png'), title: 'asdasd', subTitle: 'dsad',row: 2 },  
-    { type: 'Digital Marketing', src: 'https://images.unsplash.com/photo-1516617442634-75371039cb3a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmFja2dyb3VuZCUyMGltYWdlfGVufDB8fDB8fHww', title: 'asdasd', subTitle: 'dsad',row: 2 }, 
-    { type: 'Digital Marketing', src: 'https://images.unsplash.com/photo-1516617442634-75371039cb3a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmFja2dyb3VuZCUyMGltYWdlfGVufDB8fDB8fHww', title: 'asdasd', subTitle: 'dsad',row: 2 }, 
-  ]
 
   const [filteredContent, setFilteredContent] = useState([]);
   const [activeFilter, setActiveFilter] = useState('all')
   
-
   useEffect(() => {
-    setFilteredContent(content)
+    setFilteredContent(PortfolioData)
   }, [])
 
   const handleFilter = (filter) => {
     setFilteredContent(contents => {
-      if (filter === 'all') return content
-      return content.filter(c => c.type === filter)
+      if (filter === 'all') return PortfolioData
+      return PortfolioData.filter(c => c.type === filter)
     })
     setActiveFilter(filter)
   }
 
   return (
-    <div className='flex flex-col pl-3 pr-3 pb-20 pt-10 bg-[#1b212c] lg:justify-center lg:items-center'>
+    <div className='content-container'>
       <Header text="PORTFOLIO" />
         <div className='pt-10 pb-10 lg:w-[900px]'>
           <PageNumber page="03" /> 
           <HeaderText text="Showcasing Success: A Portfolio of Achievements and Expertise. Explore our journey, discover our impact, and witness the excellence that defines us. Your vision, our commitment – a portfolio that speaks volumes." />
           <div className='flex gap-5 '>
             {
-              filter.map((f, index) => (
+              portfolioFilter.map((f, index) => (
                 <div key={index}>
                 <button key={f.value} onClick={() => handleFilter(f.value)} className={`hover:duration-300 hover:bg-card1 px-4 ${activeFilter === f.value ? 'bg-card1 text-primary': ''} py-[7px] hover:text-primary font-[500] text-[14px]`}>
                   {f.label}

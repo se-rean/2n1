@@ -1,13 +1,7 @@
 import React from 'react'
-
+import { timelineData } from '../constant/Data'
 function Timelines() {
-  const timelineData = [
-    { date: 'july', title: 'details' },
-    { date: 'july', title: 'details' },
-    { date: 'july', title: 'details' },
-    { date: 'july', title: 'details' },
-    { date: 'july', title: 'details' }
-  ]
+ 
   return (
 
     <div class="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent">
@@ -22,9 +16,9 @@ function Timelines() {
             </div> 
             <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-slate-200 shadow">
             <div className="box-border   p-4 drop-shadow-2xl hover:drop-shadow-xl  bg-gradient-to-b  from-amber-300 to-yellow-400 flex justify-center  flex-col items-left "> 
-              <p className='text-[15px]  text-primary space-x-2 font-[500] tracking-[4px]'>2015 - 2016</p>
+              <p className='text-[15px]  text-primary space-x-2 font-[500] tracking-[4px]'>{t.date}</p>
              
-              <p className='text-[16px] font-[700]  text-primary'>Placerat in massa consectetur quisque. Nunc ac fames lectus in libero aliquet est setera nunc</p> 
+              <p className='text-[16px] font-[700]  text-primary'>{t.title}</p> 
               </div>
             </div>
           </div>

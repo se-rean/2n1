@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 import NavBar from '../layouts/nav'
-
+import Footer from '../layouts/Footer'
 export default function Wrapper({ children }) {
   const NAV_WIDTH = 240; 
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -25,6 +25,8 @@ export default function Wrapper({ children }) {
           handleNavLinkClick,
         }}/> 
     {children}
+
+    <Footer />
     </>
   )
 }

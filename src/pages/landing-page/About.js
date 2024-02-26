@@ -4,18 +4,12 @@ import Header from '../../components/Header'
 import AboutCard from '../../components/AboutCard'
 import PageNumber from '../../components/PageNumber'
 import HeaderText from '../../components/HeaderText'
-
+import { aboutCardData } from '../../constant/Data'
 export default function About() {
-
-  const cardContent = [
-    { header: '5', title: 'Digital Marketing Client' },
-    { header: '2', title: 'Web development Client' },
-    { header: '3', title: 'Virtual Assistance Client' }, 
-  ]
 
   return (
     <>
-      <div className='flex flex-col pl-3 pr-3 pt-10 bg-[#1b212c] lg:justify-center lg:items-center'>
+      <div className='content-container bg-[#1b212c]'>
         <Header text="ABOUT"/>
         <div className='pt-10 pb-10  lg:w-[900px]'>
           <PageNumber page="02" /> 
@@ -70,7 +64,7 @@ export default function About() {
               Let 2in1 be your partner in success, providing te support and expertise your business deserveds.</p> 
             <div className='lg:flex lg:overflow-auto  lg:w-[150%] lg:pr-5'>
               {
-                cardContent.map(c => (
+                aboutCardData.map(c => (
                   <div className="h-[18vh]  w-full lg:w-[300px] bg-card2 hover:bg-card1 hover:cursor-pointer"> 
                     <AboutCard header={c.header} title={c.title}/>
                   </div> 

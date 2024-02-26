@@ -4,7 +4,7 @@ import Timelines from '../../components/Timelines'
 import HeaderText from '../../components/HeaderText'
 function Timeline() {
   return (
-    <div className='flex flex-col pl-3 pr-3 pb-20 pt-10 overflow-hidden lg:justify-center lg:items-center'>
+    <div className='content-container bg-primary'>
        <Header text="TIMELINE"/>
        <div className='pt-10 pb-10 overflow-hidden lg:w-[900px]'>
           <p className='text-[16px]'>

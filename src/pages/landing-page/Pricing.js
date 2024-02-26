@@ -3,61 +3,12 @@ import HoverButton from '../../components/HoverButton'
 import Header from '../../components/Header'
 import PageNumber from '../../components/PageNumber'
 import HeaderText from '../../components/HeaderText'
+import { pricingData } from '../../constant/Data'
 function Pricing() {
 
-  const pricing = [
-    {
-      title: 'start', 
-      subTitle: 'For small business', 
-      price: '57', 
-      duration: 'mo', 
-      offer: [
-        { active: true, desc: 'Unlimited Support' },
-        { active: true, desc: '5GB Server Space' },
-        { active: true, desc: '2 Users per Project' },
-        { active: false, desc: 'Free Domain' },
-        { active: false, desc: 'Live Chat Support' },
-        { active: false, desc: 'Email Integration' },
-        { active: false, desc: 'Unlimited Download' },
-      ] 
-    },
-    {
-      title: 'FULL', 
-      subTitle: 'Best buy for the price', 
-      price: '59', 
-      duration: 'mo', 
-      offer: [
-        { active: true, desc: 'Unlimited Support' },
-        { active: true, desc: '5GB Server Space' },
-        { active: true, desc: '2 Users per Project' },
-        { active: false, desc: 'Free Domain' },
-        { active: false, desc: 'Live Chat Support' },
-        { active: false, desc: 'Email Integration' },
-        { active: false, desc: 'SEO Report' },
-        { active: false, desc: 'Daily Backups' },
-        { active: false, desc: 'Google Analytics' },
-        { active: false, desc: 'Unlimited Download' },
-      ] 
-    },
-    {
-      title: 'BASIC', 
-      subTitle: 'For medium businesses', 
-      price: '49', 
-      duration: 'mo', 
-      offer: [
-        { active: true, desc: 'Unlimited Support' },
-        { active: true, desc: '5GB Server Space' },
-        { active: true, desc: '2 Users per Project' },
-        { active: true, desc: 'Free Domain' },
-        { active: true, desc: 'Live Chat Support' },
-        { active: false, desc: 'Email Integration' },
-        { active: false, desc: 'Unlimited Download' },
-      ] 
-    }
-  ]
 
   return (
-    <div className='flex flex-col pl-3 pr-3 pb-10 pt-10  lg:justify-center lg:items-center'>
+    <div className='content-container bg-primary'>
       <Header text="PRICING"/>
       <div className='pt-10 pb-10  lg:w-[900px]'>
           <PageNumber page="04" /> 
@@ -76,7 +27,7 @@ function Pricing() {
         </div>
         <div className='lg:flex lg:self-center'>
           {
-            pricing.map( p => (
+            pricingData.map( p => (
                 <div key={p.title} className='flex flex-col items-center justify-center gap-5 mt-[3rem]'> 
                   <div className='flex flex-col justify-center items-center'>
                     <h1 className='text-[24px] font-[800] tracking-[5px] uppercase'>{p.title}</h1>

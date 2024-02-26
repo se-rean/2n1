@@ -1,0 +1,166 @@
+export const BlogData = [
+  // { title: 'Hundreds of thousands a still more glorious nights around art table', date: 'ovember 28, 2019', src: 'https://images.unsplash.com/photo-1622890806166-111d7f6c7c97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80', desc: 'Bearable only through love hydrogen atoms bits of moving fluff culture shores of the cosmic ocean paroxysm of global ...' },
+  { title: 'Preserve and cherish that pale blue dot are creatures of the cosmos light years', date: 'November 28, 2019', src: 'https://images.unsplash.com/photo-1622890806166-111d7f6c7c97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80', desc: 'Bearable only through love hydrogen atoms bits of moving fluff culture shores of the cosmic ocean paroxysm of global ...' },  
+  { title: 'Preserve and cherish that pale blue dot are creatures of the cosmos light years', date: 'November 28, 2019', src: 'https://images.unsplash.com/photo-1622890806166-111d7f6c7c97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80', desc: 'Bearable only through love hydrogen atoms bits of moving fluff culture shores of the cosmic ocean paroxysm of global ...' }, 
+]
+
+export const partnersData = [
+  { name: '', src: 'https://media.licdn.com/dms/image/D4D35AQHhBBcDoTGAGg/profile-framedphoto-shrink_400_400/0/1702963311806?e=1708894800&v=beta&t=aEGKdT_hv_1wUpVySh5ouNjfT4Ad5inMbl342jH1I9A' },
+  { name: '', src: 'https://images.unsplash.com/photo-1622890806166-111d7f6c7c97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80' },
+  { name: '', src: 'https://images.unsplash.com/photo-1622890806166-111d7f6c7c97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80' },
+  { name: '', src: 'https://images.unsplash.com/photo-1622890806166-111d7f6c7c97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80' },
+  { name: '', src: 'https://images.unsplash.com/photo-1622890806166-111d7f6c7c97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80' },
+  { name: '', src: 'https://images.unsplash.com/photo-1622890806166-111d7f6c7c97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80' },
+  { name: '', src: 'https://images.unsplash.com/photo-1622890806166-111d7f6c7c97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80' },
+  { name: '', src: 'https://images.unsplash.com/photo-1622890806166-111d7f6c7c97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80' },
+  { name: '', src: 'https://images.unsplash.com/photo-1622890806166-111d7f6c7c97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80' },
+  { name: '', src: 'https://images.unsplash.com/photo-1622890806166-111d7f6c7c97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80' },
+  { name: '', src: 'https://images.unsplash.com/photo-1622890806166-111d7f6c7c97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80' },
+  { name: '', src: 'https://images.unsplash.com/photo-1622890806166-111d7f6c7c97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80' },
+  { name: '', src: 'https://images.unsplash.com/photo-1622890806166-111d7f6c7c97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80' },
+  { name: '', src: 'https://images.unsplash.com/photo-1622890806166-111d7f6c7c97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80' },
+  { name: '', src: 'https://images.unsplash.com/photo-1622890806166-111d7f6c7c97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80' },
+]
+
+export const PortfolioData = [
+  { type: 'Virtual Assistance', src: require('../assets/BLOG POST-1.png'), title: 'BLOG POST', subTitle: 'asdasd', row:2},
+  { type: 'Virtual Assistance', src: require('../assets/BLOG POST-2.png'), title: 'LOGO CREATION', subTitle: 'asdasd', row: 2 },
+  { type: 'Virtual Assistance', src: require('../assets/LOGO CREATION.png'), title: 'LOGO CREATION', subTitle: 'asdasd', row: 2 },
+  { type: 'Virtual Assistance', src: require('../assets/PORTFOLIO-1.png'), title: 'Content Creation', subTitle: 'asdasd', row: 2 },
+  { type: 'Web Development', src: require('../assets/_2in1- WEB DEVELOPMENT.png'), title: 'asdasd', subTitle: 'dsad',row: 2 }, 
+  { type: 'Web Development', src: require('../assets/_2in1- WEB DEVELOPMENT (1).png'), title: 'asdasd', subTitle: 'dsad',row: 2 },  
+  { type: 'Digital Marketing', src: 'https://images.unsplash.com/photo-1516617442634-75371039cb3a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmFja2dyb3VuZCUyMGltYWdlfGVufDB8fDB8fHww', title: 'asdasd', subTitle: 'dsad',row: 2 }, 
+  { type: 'Digital Marketing', src: 'https://images.unsplash.com/photo-1516617442634-75371039cb3a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmFja2dyb3VuZCUyMGltYWdlfGVufDB8fDB8fHww', title: 'asdasd', subTitle: 'dsad',row: 2 }, 
+]
+
+export const portfolioFilter = [
+  { label: 'All', value: 'all' },
+  { label: 'Virtual Assistance', value: 'Virtual Assistance' },
+  { label: 'Web Development', value: 'Web Development' },
+  { label: 'Digital Marketing', value: 'Digital Marketing' }, 
+]
+
+
+export const pricingData = [
+  {
+    title: 'start', 
+    subTitle: 'For small business', 
+    price: '57', 
+    duration: 'mo', 
+    offer: [
+      { active: true, desc: 'Unlimited Support' },
+      { active: true, desc: '5GB Server Space' },
+      { active: true, desc: '2 Users per Project' },
+      { active: false, desc: 'Free Domain' },
+      { active: false, desc: 'Live Chat Support' },
+      { active: false, desc: 'Email Integration' },
+      { active: false, desc: 'Unlimited Download' },
+    ] 
+  },
+  {
+    title: 'FULL', 
+    subTitle: 'Best buy for the price', 
+    price: '59', 
+    duration: 'mo', 
+    offer: [
+      { active: true, desc: 'Unlimited Support' },
+      { active: true, desc: '5GB Server Space' },
+      { active: true, desc: '2 Users per Project' },
+      { active: false, desc: 'Free Domain' },
+      { active: false, desc: 'Live Chat Support' },
+      { active: false, desc: 'Email Integration' },
+      { active: false, desc: 'SEO Report' },
+      { active: false, desc: 'Daily Backups' },
+      { active: false, desc: 'Google Analytics' },
+      { active: false, desc: 'Unlimited Download' },
+    ] 
+  },
+  {
+    title: 'BASIC', 
+    subTitle: 'For medium businesses', 
+    price: '49', 
+    duration: 'mo', 
+    offer: [
+      { active: true, desc: 'Unlimited Support' },
+      { active: true, desc: '5GB Server Space' },
+      { active: true, desc: '2 Users per Project' },
+      { active: true, desc: 'Free Domain' },
+      { active: true, desc: 'Live Chat Support' },
+      { active: false, desc: 'Email Integration' },
+      { active: false, desc: 'Unlimited Download' },
+    ] 
+  }
+]
+
+export const servicesData = [
+  { 
+    header: '01', 
+    title: 'VIRTUAL ASSISTANCE', 
+    desc:[
+    `Welcome to 2in1 Promotions & VA
+    Solutions, where we redefine
+    productivity and efficiency through
+    our top-notch Virtual Assistance
+    services. `],
+    path: '/services'
+  },
+  { 
+    header: '02', 
+    title: 'WEB DEVELOPMENT', 
+    desc:[
+    `At 2in1, we are committed to
+    bringing your digital vision to life
+    through our comprehensive Web
+    Development services. `,
+    ], path: '/services'
+  },
+  { 
+    header: '03', 
+    title: 'DIGITAL MARKETING', 
+    desc:[
+    `Unlock the full potential of your
+    online presence with our
+    comprehensive Digital Marketing
+    services.`,],
+    path: '/services'
+    },
+]
+
+export const skillsData = [
+  {  title: 'PHOTOSHOP', percentage: '50%' },
+  {  title: 'MARKETING', percentage: '80%' },
+  {  title: 'AFFINITY', percentage: '20%' },
+  {  title: 'CODING', percentage: '50%' },
+  {  title: 'DEVELOPING', percentage: '10%' },
+  {  title: 'JAVA', percentage: '50%' }
+]
+
+export const testimonialData = [
+  {
+    name: 'JASON BROWNE',
+    message: `“Working with Jayciel on social media content has been a game-changer for our brand. The visual and captions are not only eye-catching but also resonate perfectly with our target audience. Exceptional work, and we're excited for more!”`,
+    position: 'Business Owner',
+    src: require('../assets/CLIENT TESTIMONIAL-1.png')
+  },
+  {
+    name: 'Svitlana Narchuk',
+    message: '“Rene is a Good Web Developer, it was nice to work with him, I recommend him”',
+    position: 'CEO',
+    src: require('../assets/CLIENT TESTIMONIAL-2.png')
+  },
+  
+]
+
+export  const timelineData = [
+  { date: 'july', title: 'details' },
+  { date: 'july', title: 'details' },
+  { date: 'july', title: 'details' },
+  { date: 'july', title: 'details' },
+  { date: 'july', title: 'details' }
+]
+
+export const aboutCardData = [
+  { header: '5', title: 'Digital Marketing Client' },
+  { header: '2', title: 'Web development Client' },
+  { header: '3', title: 'Virtual Assistance Client' }, 
+]
