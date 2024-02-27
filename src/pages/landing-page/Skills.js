@@ -22,12 +22,24 @@ function Skills() {
        <Header text="SKILLS"/>
        <div className='pt-10 pb-10 lg:w-[900px]'>
           <PageNumber page="07" /> 
-          <HeaderText text="Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis"/>
-            {
-              skillsData.map(i => (
-                <ProgressBar title={i.title}/>
-              ))
-            }
+          <div className='flex  gap-20 lg:flex-row flex-col flex-wrap'>
+            <div>
+              <HeaderText text="Virtual Assistance"/>
+              {
+                skillsData.map(i => (
+                  <ProgressBar title={i.title}/>
+                ))
+              }
+            </div>
+            <div>
+              <HeaderText text="Web Development"/>
+              {
+                skillsData.map(i => (
+                  <ProgressBar title={i.title}/>
+                ))
+              }
+            </div>
+          </div>
        </div>
     </div>
   )

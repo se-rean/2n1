@@ -9,11 +9,13 @@ import Services from '../pages/landing-page/Services'
 import { Fragment } from 'react'
 import LandingPage from './landing' 
 import Wrapper from './Wrapper'
+import BlogPost from '../pages/BlogPost'
 
 const AppRoute = () => {
   const RouteLinks = [
     { path: '/about', page: <About /> },
     { path: '/services', page: <Services /> },
+    { path: '/blog', page: <BlogPost /> },
     { path: '/', page: <LandingPage /> }
   ]
 

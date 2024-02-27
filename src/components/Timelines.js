@@ -19,6 +19,13 @@ function Timelines() {
               <p className='text-[15px]  text-primary space-x-2 font-[500] tracking-[4px]'>{t.date}</p>
              
               <p className='text-[16px] font-[700]  text-primary'>{t.title}</p> 
+              <ul>
+                {
+                  t.desc.map((d, i) => (
+                    <li className='text-primary' key={d}>{i+1}. {d}</li>
+                  ))
+                }
+              </ul>
               </div>
             </div>
           </div>

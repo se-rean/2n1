@@ -10,13 +10,13 @@ function Timeline() {
           <p className='text-[16px]'>
             08
           </p> 
-          <HeaderText text="Donec dipiscing elit ultrices nec id sed cursus tempor lipsum arcu lorem amet est per sei." />
-          <p className='text-[16px]'>
+          <HeaderText text="Here's a broad yearly timeline for a 2in1 promotions and virtual solutions startup from 2018 to 2023:" />
+          {/* <p className='text-[16px]'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla sodales dolor de arcu sagittis ultrices felis, faucibus tortor sed. In tristique ipsum fermentum diam lorem ipsum toleroeise molaris. 
           </p>
           <br></br>
           <p className='text-[14px]'>
-          Nisl mi commodo enim nisl curabitur in massa id orci. Ut pellentesque donec aliquet pellentesque duis sollicitudin aliquet eget ridiculus euismod vito mores salominoli etorios babucas ati polimoro.</p> 
+          Nisl mi commodo enim nisl curabitur in massa id orci. Ut pellentesque donec aliquet pellentesque duis sollicitudin aliquet eget ridiculus euismod vito mores salominoli etorios babucas ati polimoro.</p>  */}
           <div className='flex flex-col gap-5 relative mt-20'> 
             <Timelines /> 
           </div>

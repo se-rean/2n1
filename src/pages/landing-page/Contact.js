@@ -31,7 +31,7 @@ function Contact() {
           <p className='text-[16px]'>
             08
           </p> 
-          <HeaderText text="Dolor de art sagittis ultrices felis, faucibus tortor sed. In tristique ipsum fermentum diam lorem."/>
+          <HeaderText text="Our dedicated team is here to assist you in unlocking the full potential of your business through our innovative promotions and virtual assistant solutions. Feel free to drop us a line, ask questions, or share your thoughts. We value your input and are committed to providing you with the highest level of service."/>
           <form onSubmit={(e) => handleSubmit(e)} className='lg:flex lg:justify-center'>
             <div className='pt-10 pb-10 w-[28rem] lg:w-[40rem] gap-5 self-center flex flex-col'>
                 <Input title="Name" handleValueChange={(e) => setName(e)} value={name}/>

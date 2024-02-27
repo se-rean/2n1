@@ -1,6 +1,6 @@
 export const BlogData = [
   // { title: 'Hundreds of thousands a still more glorious nights around art table', date: 'ovember 28, 2019', src: 'https://images.unsplash.com/photo-1622890806166-111d7f6c7c97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80', desc: 'Bearable only through love hydrogen atoms bits of moving fluff culture shores of the cosmic ocean paroxysm of global ...' },
-  { title: 'Preserve and cherish that pale blue dot are creatures of the cosmos light years', date: 'November 28, 2019', src: 'https://images.unsplash.com/photo-1622890806166-111d7f6c7c97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80', desc: 'Bearable only through love hydrogen atoms bits of moving fluff culture shores of the cosmic ocean paroxysm of global ...' },  
+  { title: 'WHY VIRTUAL ASSISTANTS ARE GREAT FOR BUSINESSES', date: 'November 28, 2019', src: 'https://images.unsplash.com/photo-1622890806166-111d7f6c7c97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80', desc: 'Learn why having a virtual assistant is beneficial for your business.' },  
   { title: 'Preserve and cherish that pale blue dot are creatures of the cosmos light years', date: 'November 28, 2019', src: 'https://images.unsplash.com/photo-1622890806166-111d7f6c7c97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80', desc: 'Bearable only through love hydrogen atoms bits of moving fluff culture shores of the cosmic ocean paroxysm of global ...' }, 
 ]
 
@@ -152,11 +152,14 @@ export const testimonialData = [
 ]
 
 export  const timelineData = [
-  { date: 'july', title: 'details' },
-  { date: 'july', title: 'details' },
-  { date: 'july', title: 'details' },
-  { date: 'july', title: 'details' },
-  { date: 'july', title: 'details' }
+  { date: '2023', title: 'Continuous Improvement', desc: [`Market research to identify potential niches in 2in1 promotions and virtual solutions`,`Formation of the founding team.`,`Initial business plan and strategy development.`] },
+  { date: '2022', title: 'Introduce sustainability initiatives within promotions', desc: [`Officially launch the 2in1 promotions and virtual solutions platform`, `Implement marketing strategies to increase user adoption.
+  `]  },
+  { date: '2021', title: 'International Expansion', desc: [`Introduce new features and improvements based on user feedback`,`Expand the range of virtual solutions offered`,`Establish strategic partnerships with key industry players.`,`Explore collaborations with influencers or brands for promotions.`]  },
+  { date: '2020', title: 'Feature Enhancement', desc: [`Explore opportunities for international expansion.`, `Explore partnerships with third-party providers for added value.`,`Develop community engagement strategies.`,`Implement referral programs to encourage user-generated promotion
+  `]  },
+  { date: '2019', title: 'Official Launch and Marketing', desc: [`Invest in data analytics to provide actionable insights for businesses.`]  },
+  { date: '2018', title: 'Company Inception and Ideation', desc: [`Continuously refine and improve the platform based on user feedback.`,`Evaluate and implement emerging technologies in the industry.`,`Celebrate the company's achievements and milestones.`,`Plan for the next phase of growth and innovation.`]  },
 ]
 
 export const aboutCardData = [
