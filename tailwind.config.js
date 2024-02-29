@@ -13,7 +13,7 @@ module.exports = {
         tertiary: "#151c28",
         primaryText: '#ffbf00',
         card1: '#ffdc73',
-        card2: 	'#ffcf40'
+        card2: 	'#ffbf00'
       }
     },
   },

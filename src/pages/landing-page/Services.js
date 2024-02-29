@@ -9,7 +9,7 @@ export default function Services() {
   const navigate = useNavigate();
 
   return (
-    <div className='flex flex-col pl-3 pr-3 pt-10 gap-14 lg:justify-center lg:items-center z-10'> 
+    <div className='content-container '> 
       <Header text="SERVICES" />
       <div className='flex flex-col justify-start items-start lg:w-[900px]'>
         <div className='flex flex-col gap-2 justify-start items-start'>

@@ -7,7 +7,7 @@ import { testimonialData } from '../../constant/Data';
 function Testimonial() {
  
   return (
-     <div className='flex flex-col pl-3 pr-3 pb-20 pt-10 bg-[#1b212c] lg:justify-center lg:items-center'>
+     <div className='content-container'>
        <Header text="TESTIMONIAL"/>
         <div className='pt-10 pb-10 lg:w-[900px]'>
           <PageNumber page="05" /> 

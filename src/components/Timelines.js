@@ -15,14 +15,14 @@ function Timelines() {
               </div> 
             </div> 
             <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-slate-200 shadow">
-            <div className="box-border   p-4 drop-shadow-2xl hover:drop-shadow-xl  bg-gradient-to-b  from-amber-300 to-yellow-400 flex justify-center  flex-col items-left "> 
+            <div className="box-border   p-4 drop-shadow-2xl hover:drop-shadow-xl  bg-gradient-to-b  bg-card2 flex justify-center  flex-col items-left"> 
               <p className='text-[15px]  text-primary space-x-2 font-[500] tracking-[4px]'>{t.date}</p>
              
               <p className='text-[16px] font-[700]  text-primary'>{t.title}</p> 
               <ul>
                 {
                   t.desc.map((d, i) => (
-                    <li className='text-primary' key={d}>{i+1}. {d}</li>
+                    <li className='text-primary bullet mx-2' key={d}>{d}</li>
                   ))
                 }
               </ul>

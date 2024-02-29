@@ -6,9 +6,9 @@ const nav = [
   // { label: 'Pricing', name: 'pricing', link: '#pricing' },
   { label: 'Testimonial', name: 'testimonial', link: '#testimonial' },
   { label: 'Blog', name: 'blog', link: '#blog' },
-  { label: 'Careers', name: 'Careers', link: '#careers' },
+  { label: 'Careers', name: 'Careers', link: '' },
   { label: 'Timeline', name: 'timeline', link: '#timeline' },
-  { label: 'Referal Partners', name: 'contact', link: '#contact' },
+  { label: 'Referal Partners', name: 'contact', link: '' },
   { label: 'Contact Us', name: 'contact', link: '#contact' },
 ]
 

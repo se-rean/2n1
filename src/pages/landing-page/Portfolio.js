@@ -5,19 +5,21 @@ import HeaderText from '../../components/HeaderText';
 import Swipper from '../../components/Swipper';
 import Modal from '../../components/Dialog';
 import { PortfolioData, portfolioFilter } from '../../constant/Data';
+import HoverButton from '../../components/HoverButton';
+import { useNavigate } from 'react-router-dom';
 function Portfolio() {
-
+  const navigate = useNavigate()
   const [filteredContent, setFilteredContent] = useState([]);
   const [activeFilter, setActiveFilter] = useState('all')
   
   useEffect(() => {
-    setFilteredContent(PortfolioData)
+    setFilteredContent(PortfolioData.slice(0,4))
   }, [])
 
   const handleFilter = (filter) => {
     setFilteredContent(contents => {
-      if (filter === 'all') return PortfolioData
-      return PortfolioData.filter(c => c.type === filter)
+      if (filter === 'all') return PortfolioData.slice(0,4)
+      return PortfolioData.slice(0,4).filter(c => c.type === filter)
     })
     setActiveFilter(filter)
   }
@@ -55,6 +57,7 @@ function Portfolio() {
                     </div> 
                ))
              }
+             <HoverButton onClick={() => navigate('/portfolio')} title="View All" />
              {/* </Swipper>  */}
             </div>
           </div>

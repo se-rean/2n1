@@ -10,12 +10,15 @@ import { Fragment } from 'react'
 import LandingPage from './landing' 
 import Wrapper from './Wrapper'
 import BlogPost from '../pages/BlogPost'
+import PortfolioPage from '../pages/PortfolioPage'
+import PageNotFound from '../pages/PageNotFound'
 
 const AppRoute = () => {
   const RouteLinks = [
     { path: '/about', page: <About /> },
     { path: '/services', page: <Services /> },
     { path: '/blog', page: <BlogPost /> },
+    { path: '/portfolio', page: <PortfolioPage /> },
     { path: '/', page: <LandingPage /> }
   ]
 
@@ -23,7 +26,6 @@ const AppRoute = () => {
   return <>
     <BrowserRouter> 
       <Routes>
-       
         {
           RouteLinks.map((r, i) => (
             <Fragment key={i}>
@@ -37,7 +39,7 @@ const AppRoute = () => {
         }
         <Route 
           path='*'
-          element={<Wrapper><h1>Page not found</h1></Wrapper>}
+          element={<Wrapper><PageNotFound /></Wrapper>}
         />
       </Routes>
     </BrowserRouter>

@@ -35,10 +35,10 @@ export default function LandingPage() {
       <section id='testimonial' className='pt-20 '>
         <Testimonial />
       </section>
-      <section id='partners' className='pt-20 bg-[#1b212c]'>
+      <section id='partners' className='pt-20'>
         <Partners />
       </section>
-      <section id='blog' className='pt-20'>
+      <section id='blog' className='pt-20  bg-[#1b212c]'>
         <Blog />
       </section>
       {/* <section id='skills' className='pt-20 bg-[#1b212c]'>

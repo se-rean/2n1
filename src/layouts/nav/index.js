@@ -9,7 +9,7 @@ import useResponsive from '../../hooks/use-responsive';
 import { motion } from "framer-motion"
 import Typography from '@mui/material/Typography'; 
 import IconButton from '@mui/material/IconButton';
-import { Menu as MenuIcon, Close} from '@mui/icons-material/';
+import { Menu as MenuIcon, Close, Phone, Email} from '@mui/icons-material/';
 import nav from '../nav-items';
 
 const variants = {
@@ -109,11 +109,22 @@ export default function NavBar({
    
       elevation: 0
     }}>
-      <AppBar sx={{ boxShadow: 0, background: `${scrollPosition > 0 ? "#1b212c" : "rgba(0, 0, 0, 0.01)"}`, opacity: 1, height: '80px', justifyContent: 'space-between',
+        {
+            isDesktop && (
+              <div className='w-[100%] h-[30px]  absolute left-0 z-30 flex justify-around items-center text-sm'>
+                <p className=''>Need help or need a hand? We got a VA for that!</p>
+                <div className='flex gap-4 '>  
+                  <a href='mailto:vic@2in1.com.au'><Email sx={{ width: '20px' }}/> vic@2in1.com.au</a>
+                  <p><Phone sx={{ width: '20px' }}/> <a className='hover:text-primaryText' href='tel:1300 711 000'>1300 711 000</a> | <a className='hover:text-primaryText' href='tel:1300 711 000'>0411 500 700</a></p>
+                </div>
+            </div>
+            ) 
+        }
+      <AppBar sx={{ boxShadow: 0, background: `${scrollPosition > 0 ? "#1b212c" : "rgba(0, 0, 0, 0.01)"}`, opacity: 1, height: '100px', justifyContent: 'space-between',
       padding: '0px 10px', }} position="static">
         <Toolbar >
               <Typography  variant="h6" component="div" sx={{ flexGrow: 1 }}>   
-                <img onClick={() => window.location = '/'} hidden={!isDesktop && drawerOpen } className="w-[100px] fixed top-4 lg:left-[12rem] cursor-pointer" alt='' src='https://2in1.com.au/wp-content/uploads/2023/07/NEWCIRCLELOGOwithQR-TR.png'/> 
+                <img onClick={() => window.location = '/'} hidden={!isDesktop && drawerOpen } className="w-[100px] fixed top-5 xl:top-10 lg:left-[12rem] cursor-pointer" alt='' src='https://2in1.com.au/wp-content/uploads/2023/07/NEWCIRCLELOGOwithQR-TR.png'/> 
               </Typography> 
                 { !isDesktop && <IconButton
                   onClick={() => handleToggleDrawer()}
@@ -128,7 +139,7 @@ export default function NavBar({
                 {
                   isDesktop ? (
               
-                  <div className='flex flex-row lg:pr-[10rem]'> 
+                  <div className='flex flex-row lg:pr-[10rem] xl:mt-6'> 
                     <RenderContent handleToggleDrawer={handleToggleDrawer} handleNavLinkClick={handleNavLinkClick} type="desktop" />
                   </div> 
                   ) : 
