@@ -10,7 +10,7 @@ export default function About() {
   return (
     <>
       <div className='content-container bg-[#1b212c]'>
-        <Header text="ABOUT"/>
+        <Header text="Why 2in1?"/>
         <div className='pt-10 pb-10  lg:w-[900px]'>
           <PageNumber page="02" /> 
           <HeaderText text="Welcome to 2n1 Promotions & VA Solutions, your go-to destination for comprehensive business support." />
@@ -18,11 +18,11 @@ export default function About() {
            
           <div className='lg:flex  lg:justify-between lg:gap-10 lg:items-start lg:w-[100%]'>
             <p className='text-[16px] lg:text-left lg:text-[100%] lg:w-[50%]'>
-              We specialize in Virtual Assistance, Web Development, and Digital Marketing services, offering a 2in1 solutions to elevate your brand's online presence. 
+              We specialize in Virtual Assistance, Web Development, and Digital Marketing Services, offering a 2in1 solutions to elevate your brand's online presence. 
             </p>
             <br></br>
             <p className='text-[16px] text-center lg:text-left lg:text-[100%] lg:w-[50%]'>
-            Whether you need dedicated virtual Assistance, a dynamic website, or strategic digital Marketing, We are here to seamlessly integrate these services to meet your business needs.
+            Whether you need dedicated Virtual Assistance, a Dynamic Website, or strategic Digital Marketing, We are here to seamlessly integrate these services to meet your business needs.
             </p> 
           </div>
           

@@ -8,7 +8,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #10141b;
   color: #cfd6e3;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.8;
   font-weight: 400;
   padding: 0;
@@ -365,4 +365,8 @@ px
   .content-container {
     @apply flex flex-col pl-3 pr-3 pt-20  lg:justify-center lg:items-center gap-14 z-10
   }
+}
+
+.blogpost > ul > li {
+  list-style-type: circle;
 }

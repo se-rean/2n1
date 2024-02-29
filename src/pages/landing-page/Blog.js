@@ -3,9 +3,9 @@ import HoverButton from '../../components/HoverButton'
 import Header from '../../components/Header'
 import HeaderText from '../../components/HeaderText'
 import { BlogData } from '../../constant/Data'
-
+import { useNavigate } from 'react-router-dom'
 function Blog() {
-
+  const navigate = useNavigate()
   return (
     <div className='content-container'>
       <Header text="BLOG"/>
@@ -22,14 +22,14 @@ function Blog() {
                 <p className='text-[18px] text-[#62728f]'>{c.date}</p>
                 <p className='pb-[40px] text-[22px] font-[800] cursor-pointer'>{c.title}</p>
                 <div className='cursor-pointer overflow-hidden w-full h-[350px]'>
-                  <img className='hover-images w-full h-full' src={c.src} alt=''/>
+                  <img onClick={() => navigate(`/blog#${c.id}`)} className='hover-images w-full h-full' src={c.src} alt=''/>
                 </div> 
                 <p className='mt-10 text-ellipsis'>{c.desc}</p> 
               </div>
             ))
           }
-        </div> 
-        <HoverButton title="All Story"/>
+        </div>  
+        <HoverButton onClick={() => window.location = `/blog`} title="All Story"/>
       </div> 
     </div>
   )

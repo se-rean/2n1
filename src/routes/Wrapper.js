@@ -17,7 +17,7 @@ export default function Wrapper({ children }) {
   };
 
   return (
-    <> 
+    <>  
     <NavBar  {...{
           handleToggleDrawer,
           drawerOpen,

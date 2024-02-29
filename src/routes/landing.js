@@ -29,9 +29,9 @@ export default function LandingPage() {
       <section id='portfolio' className='pt-20 bg-[#1b212c]'>
         <Portfolio />
       </section>
-      <section id='pricing' className='pt-20'>
+      {/* <section id='pricing' className='pt-20'>
         <Pricing />
-      </section>
+      </section> */}
       <section id='testimonial' className='pt-20 '>
         <Testimonial />
       </section>
@@ -41,9 +41,9 @@ export default function LandingPage() {
       <section id='blog' className='pt-20'>
         <Blog />
       </section>
-      <section id='skills' className='pt-20 bg-[#1b212c]'>
+      {/* <section id='skills' className='pt-20 bg-[#1b212c]'>
         <Skills />
-      </section>
+      </section> */}
       <section id='timeline' className='pt-20'>
         <Timeline />
       </section>

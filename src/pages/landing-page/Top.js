@@ -8,7 +8,7 @@ function Top() {
   const [modal, setModal] = useState(false)
 
   return (
-    <div className='flex lg:flex-row lg:items-center flex-col home justify-between bg-blend-darken lg:h-[80vh] h-[50rem]'> 
+    <div className='flex lg:flex-row lg:items-center flex-col home justify-between bg-blend-darken lg:h-[80vh] h-[50rem] animate__animated animate__fadeIn '> 
      {modal && (
      <Dialog isOpen={modal} handleClose={() => setModal(!modal)}>
         <video className="h-[70%] w-[70%] rounded-lg opacity-100 " controls autoPlay>
@@ -24,7 +24,7 @@ function Top() {
           <PulseButton />
         </div> 
       </div>
-      <div className='lg:flex lg:absolute lg:bottom-[8vh] h-[200px] right-0 lg:w-[78%] z-10'>
+      <div className='lg:flex lg:absolute lg:bottom-[8vh] h-[200px] right-0 lg:w-[78%] z-10 '>
         <div className='w-[30%] relative hidden lg:block'>
           <div className='bg-primary bottom-[4rem] w-[5vh] h-[9vh] rounded-t-full rounded-b-full absolute flex justify-center items-center'>
             <div className='border-2 bottom-10 w-[4vh] h-[8vh] flex justify-center rounded-t-full rounded-b-full'>

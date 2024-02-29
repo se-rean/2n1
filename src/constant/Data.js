@@ -1,7 +1,6 @@
 export const BlogData = [
-  // { title: 'Hundreds of thousands a still more glorious nights around art table', date: 'ovember 28, 2019', src: 'https://images.unsplash.com/photo-1622890806166-111d7f6c7c97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80', desc: 'Bearable only through love hydrogen atoms bits of moving fluff culture shores of the cosmic ocean paroxysm of global ...' },
-  { title: 'WHY VIRTUAL ASSISTANTS ARE GREAT FOR BUSINESSES', date: 'November 28, 2019', src: 'https://images.unsplash.com/photo-1622890806166-111d7f6c7c97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80', desc: 'Learn why having a virtual assistant is beneficial for your business.' },  
-  { title: 'Preserve and cherish that pale blue dot are creatures of the cosmos light years', date: 'November 28, 2019', src: 'https://images.unsplash.com/photo-1622890806166-111d7f6c7c97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80', desc: 'Bearable only through love hydrogen atoms bits of moving fluff culture shores of the cosmic ocean paroxysm of global ...' }, 
+  { id: "1", title: 'WHY VIRTUAL ASSISTANTS ARE GREAT FOR BUSINESSES', date: 'November 28, 2019', src: 'https://images.unsplash.com/photo-1616587226960-4a03badbe8bf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', desc: 'Learn why having a virtual assistant is beneficial for your business.' },  
+ 
 ]
 
 export const partnersData = [
@@ -29,8 +28,8 @@ export const PortfolioData = [
   { type: 'Virtual Assistance', src: require('../assets/PORTFOLIO-1.png'), title: 'Content Creation', subTitle: 'asdasd', row: 2 },
   { type: 'Web Development', src: require('../assets/_2in1- WEB DEVELOPMENT.png'), title: 'asdasd', subTitle: 'dsad',row: 2 }, 
   { type: 'Web Development', src: require('../assets/_2in1- WEB DEVELOPMENT (1).png'), title: 'asdasd', subTitle: 'dsad',row: 2 },  
-  { type: 'Digital Marketing', src: 'https://images.unsplash.com/photo-1516617442634-75371039cb3a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmFja2dyb3VuZCUyMGltYWdlfGVufDB8fDB8fHww', title: 'asdasd', subTitle: 'dsad',row: 2 }, 
-  { type: 'Digital Marketing', src: 'https://images.unsplash.com/photo-1516617442634-75371039cb3a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmFja2dyb3VuZCUyMGltYWdlfGVufDB8fDB8fHww', title: 'asdasd', subTitle: 'dsad',row: 2 }, 
+  // { type: 'Digital Marketing', src: 'https://images.unsplash.com/photo-1516617442634-75371039cb3a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmFja2dyb3VuZCUyMGltYWdlfGVufDB8fDB8fHww', title: 'asdasd', subTitle: 'dsad',row: 2 }, 
+  // { type: 'Digital Marketing', src: 'https://images.unsplash.com/photo-1516617442634-75371039cb3a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmFja2dyb3VuZCUyMGltYWdlfGVufDB8fDB8fHww', title: 'asdasd', subTitle: 'dsad',row: 2 }, 
 ]
 
 export const portfolioFilter = [
