@@ -14,11 +14,11 @@ function Blog() {
           06
         </p>
         <p className='pb-[40px] text-[20px] font-[600] '></p>
-        <HeaderText text="Caucibus tortor sed. In tristique ipsum fermentum diam lorem est donec." />
-        <div className='lg:flex gap-5 '>
+        {/* <HeaderText text="Caucibus tortor sed. In tristique ipsum fermentum diam lorem est donec." /> */}
+        <div className='lg:flex flex-wrap w-full'>
           {
             BlogData.map((c, index) => (
-              <div key={index} className='my-10 flex flex-col justify-center h-[650px] overflow-hidden'>
+              <div key={index} className='mx-5 flex flex-col justify-center h-[650px] lg:w-[40%] overflow-hidden'>
                 <p className='text-[18px] text-[#62728f]'>{c.date}</p>
                 <p className='pb-[40px] text-[22px] font-[800] cursor-pointer'>{c.title}</p>
                 <div className='cursor-pointer overflow-hidden w-full h-[350px]'>

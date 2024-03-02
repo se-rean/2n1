@@ -16,13 +16,13 @@ export default function About() {
           <HeaderText text="Welcome to 2n1 Promotions & VA Solutions, your go-to destination for comprehensive business support." />
           
            
-          <div className='lg:flex  lg:justify-between lg:gap-10 lg:items-start lg:w-[100%]'>
-            <p className='text-[16px] lg:text-left lg:text-[100%] lg:w-[50%]'>
+          <div className='  lg:justify-between lg:gap-10 lg:items-start lg:w-[100%]'>
+            <p className='text-[16px] lg:text-left lg:text-[100%] lg:w-[100%]'>
               We specialize in Virtual Assistance, Web Development, and Digital Marketing Services, offering a 2in1 solutions to elevate your brand's online presence. 
             </p>
             <br></br>
-            <p className='text-[16px] text-center lg:text-left lg:text-[100%] lg:w-[50%]'>
-            Whether you need dedicated Virtual Assistance, a Dynamic Website, or strategic Digital Marketing, We are here to seamlessly integrate these services to meet your business needs.
+            <p className='text-[16px] text-center lg:text-left lg:text-[100%] lg:w-[100%]'>
+            Hey there! Vic here, and I'm passionate about creating meaningful connections between brands and their target audiences. At 2in1 Promotions & VA Solutions, we put your brand 1st. As the Managing Director at 2in1 Promotions & VA Solutions, I lead a talented team of VA professionals in the Philippines dedicated to crafting innovative and effective marketing solutions that drive engagement and brand awareness.  Our "2in1 approach" means that we put your company ahead of ourselves and promote your business by helping your audience understand what you do while having the opportunity to share and showcase our expertise, that is what "2in1" truly represents. 
             </p> 
           </div>
           

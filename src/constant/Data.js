@@ -1,6 +1,8 @@
 export const BlogData = [
   { id: "1", title: 'WHY VIRTUAL ASSISTANTS ARE GREAT FOR BUSINESSES', date: 'November 28, 2019', src: 'https://images.unsplash.com/photo-1616587226960-4a03badbe8bf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', desc: 'Learn why having a virtual assistant is beneficial for your business.' },  
- 
+  { id: "2", title: 'WHY VIRTUAL ASSISTANTS ARE GREAT FOR BUSINESSES', date: 'November 28, 2019', src: 'https://images.unsplash.com/photo-1616587226960-4a03badbe8bf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', desc: 'Learn why having a virtual assistant is beneficial for your business.' },  
+  { id: "1", title: 'WHY VIRTUAL ASSISTANTS ARE GREAT FOR BUSINESSES', date: 'November 28, 2019', src: 'https://images.unsplash.com/photo-1616587226960-4a03badbe8bf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', desc: 'Learn why having a virtual assistant is beneficial for your business.' },  
+  { id: "1", title: 'WHY VIRTUAL ASSISTANTS ARE GREAT FOR BUSINESSES', date: 'November 28, 2019', src: 'https://images.unsplash.com/photo-1616587226960-4a03badbe8bf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', desc: 'Learn why having a virtual assistant is beneficial for your business.' },  
 ]
 export const partnersData = [
   { name: '', src: 'https://images.unsplash.com/photo-1622890806166-111d7f6c7c97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80' },
@@ -21,7 +23,7 @@ export const partnersData = [
 ]
 
 export const PortfolioData = [
-  { type: 'Virtual Assistance', src: require('../assets/BLOG POST-1.png'), title: 'BLOG POST', subTitle: 'asdasd', row:2},
+  { type: 'Virtual Assistance', src: require('../assets/BLOG POST -1.png'), title: 'BLOG POST', subTitle: 'asdasd', row:2},
   { type: 'Web Development', src: require('../assets/_2in1- WEB DEVELOPMENT.png'), title: 'asdasd', subTitle: 'dsad',row: 2 }, 
   { type: 'Virtual Assistance', src: require('../assets/BLOG POST-2.png'), title: 'LOGO CREATION', subTitle: 'asdasd', row: 2 },
   { type: 'Web Development', src: require('../assets/_2in1- WEB DEVELOPMENT (1).png'), title: 'asdasd', subTitle: 'dsad',row: 2 },  

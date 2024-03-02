@@ -80,7 +80,7 @@ function RenderContent({type, handleToggleDrawer, handleNavLinkClick}) {
  
 export default function NavBar({
   handleToggleDrawer,
-  drawerOpen,
+  drawerOpen = false,
   NAV_WIDTH,
   handleNavLinkClick
 }) {

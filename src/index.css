@@ -369,6 +369,7 @@ px
 
 .blogpost > ul > li {
   list-style-type: circle;
+  @apply font-[500] tracking-wide leading-7
 }
 .bullet {
   list-style-type:circle;

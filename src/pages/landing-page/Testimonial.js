@@ -20,18 +20,19 @@ function Testimonial() {
             <p className='text-[14px]'>
             Nisl mi commodo enim nisl curabitur in massa id orci. Ut pellentesque donec aliquet pellentesque duis sollicitudin aliquet eget ridiculus euismod vito mores salominoli etorios babucas ati polimoro.</p> 
           </div> */}
-          <div className='snap-mandatory py-20 px-5  lg:gap-10 snap-x flex   lg:w-[1000px] testimonial'>
+          <div className='snap-mandatory py-20 px-5  lg:gap-10 snap-x flex  gap-5 lg:w-[1300px] flex-wrap lg:flex'>
             {/* <Swipper items={3} > */}
               {
                 testimonialData.map(t => (
-                  <div className='snap-start pr-4 lg:row-span-1'>
-                    <TestimonialCard 
+                  <div className='snap-start pr-4 lg:row-span-1 lg:w-[40%]'>
+                    {/* <TestimonialCard 
                     className="snap-start"
                     name={t.name} 
                     message={t.message} 
                     position={t.position}
                     img={t.src}
-                    />
+                    /> */}
+                    <img alt='' className='object-fill top-0 h-full w-full opacity-[70%]' src={t.src}/>
                   </div> 
                 ))
               }

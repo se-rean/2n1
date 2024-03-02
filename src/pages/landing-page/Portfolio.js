@@ -30,7 +30,7 @@ function Portfolio() {
         <div className='pt-10 pb-10 lg:w-[900px]'>
           <PageNumber page="03" /> 
           <HeaderText text="Showcasing Success: A Portfolio of Achievements and Expertise. Explore our journey, discover our impact, and witness the excellence that defines us. Your vision, our commitment – a portfolio that speaks volumes." />
-          <div className='flex gap-5 '>
+          <div className='flex gap-5 flex-wrap'>
             {
               portfolioFilter.map((f, index) => (
                 <div key={index}>
