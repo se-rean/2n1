@@ -9,7 +9,7 @@ function Blog() {
   return (
     <div className='content-container'>
       <Header text="BLOG"/>
-      <div className='pt-10 pb-10 lg:w-[900px] '>
+      <div className='pt-10 pb-10 lg:w-[900px] gap-5 flex flex-col'>
         <p className='text-[16px]'>
           06
         </p>
@@ -20,7 +20,7 @@ function Blog() {
             BlogData.map((c, index) => (
               <div key={index} className='mx-5 flex flex-col justify-center h-[650px] lg:w-[40%] overflow-hidden'>
                 <p className='text-[18px] text-[#62728f]'>{c.date}</p>
-                <p className='pb-[40px] text-[22px] font-[800] cursor-pointer'>{c.title}</p>
+                <p onClick={() => navigate(`/blog#${c.id}`)} className='pb-[40px] text-[22px] font-[800] cursor-pointer hover:underline hover:underline-offset-2'>{c.title}</p>
                 <div className='cursor-pointer overflow-hidden w-full h-[350px]'>
                   <img onClick={() => navigate(`/blog#${c.id}`)} className='hover-images w-full h-full' src={c.src} alt=''/>
                 </div> 

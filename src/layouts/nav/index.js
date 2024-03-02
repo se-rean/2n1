@@ -92,14 +92,15 @@ export default function NavBar({
     setScrollPosition(position);
 };
 
+const isDesktop = useResponsive('up', 'xl'); 
+
   useEffect(() => {
       window.addEventListener('scroll', handleScroll, { passive: true });
-
       return () => {
           window.removeEventListener('scroll', handleScroll);
       };
-  }, []);
-  const isDesktop = useResponsive('up', 'xl'); 
+  }, [isDesktop]);
+
   return (
    
     <Box className="z-20" sx={{
@@ -114,7 +115,7 @@ export default function NavBar({
               <div className='w-[100%] h-[30px]  absolute left-0 z-30 flex justify-around items-center text-sm'>
                 <p className=''>Need help or need a hand? We got a VA for that!</p>
                 <div className='flex gap-4 '>  
-                  <a href='mailto:vic@2in1.com.au'><Email sx={{ width: '20px' }}/> vic@2in1.com.au</a>
+                  <a className='hover:text-primaryText' href='mailto:vic@2in1.com.au'><Email sx={{ width: '20px' }}/> vic@2in1.com.au</a>
                   <p><Phone sx={{ width: '20px' }}/> <a className='hover:text-primaryText' href='tel:1300 711 000'>1300 711 000</a> | <a className='hover:text-primaryText' href='tel:1300 711 000'>0411 500 700</a></p>
                 </div>
             </div>

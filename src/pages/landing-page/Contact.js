@@ -1,27 +1,44 @@
-import React, { useState } from 'react' 
+import React, { useState, useRef } from 'react' 
 // import nodemailer from 'nodemailer';
 import Header from '../../components/Header'
 import Input from '../../components/Input'
 import HeaderText from '../../components/HeaderText'
 import HoverButton from '../../components/HoverButton'
+import emailjs from '@emailjs/browser';
+import { useForm } from 'react-hook-form';
 
 function Contact() {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
   const [subject, setSubject] = useState("")
   const [message, setMessage] = useState("")
+  const [sending, setSending] = useState(false)
+  const [sendMessage, setSendMessage] = useState(null)
 
-  const handleSubmit = async (e) => {
-    e.preventDefault()
-
-    // const options = {
-    //   from: 'you@example.com',
-    //   to: 'user@gmail.com',
-    //   subject: 'hello world',
-    //   html: <h1>Hello</h1>,
-    // };
-
-    // await transporter.sendMail(options);
+  const form = useRef();
+  const sendEmail = async (e) => {
+    setSending(true)
+    setSendMessage(null)
+    emailjs
+    .sendForm('service_k0mwlrh', 'template_vsgaldb', form.current, {
+      publicKey: 'A393kpI6fAN-9v3kk',
+    })
+    .then(
+      () => { 
+        setSending(false) 
+        setSendMessage("Message Send!")
+      },
+      (error) => {
+        setSending(false)
+        setSendMessage("Please try again.")
+      },
+    );
   }
 
   return (
@@ -34,15 +51,41 @@ function Contact() {
           <HeaderText  text="Our dedicated team is here to assist you in unlocking the full potential of your business through our innovative promotions and virtual assistant solutions."/>
           <div className='lg:flex lg:justify-between gap-8'>
             <HeaderText color="white" font-size="16px" text="Feel free to drop us a line, ask questions, or share your thoughts. We value your input and are committed to providing you with the highest level of service."/>
-            <form onSubmit={(e) => handleSubmit(e)} className='lg:flex lg:justify-center w-full lg:w-[80%]'>
+            <form ref={form} onSubmit={handleSubmit((data) => sendEmail(data))} className='lg:flex lg:justify-center w-full lg:w-[80%]'>
               <div className='pt-10 lg:pt-0 pb-10 w-[100%] lg:w-[30rem] gap-5 self-center flex flex-col'>
-                  <Input title="Name" handleValueChange={(e) => setName(e)} value={name}/>
-                  <Input title="Email" handleValueChange={(e) => setEmail(e)} value={email}/>
-                  <Input title="Subject" handleValueChange={(e) => setSubject(e)} value={subject}/>
+
+                  <Input 
+                    {...register('from_name', { required: 'Name field is required.' })}
+                    title="Name"  
+                    name="from_name" 
+                    handleValueChange={(e) => setName(e)} value={email}
+                    error={errors.from_name}
+                  />
+
+                  <Input 
+                    {...register('user_email', { required: 'Email field is required.' })}
+                    title="Email" 
+                    type="email" 
+                    name="user_email" 
+                    handleValueChange={(e) => setEmail(e)} value={email}
+                    error={errors.user_email}
+                  />
+
+                  <Input 
+                    {...register('email_subject', { required: 'Subject field is required.' })}
+                    title="Subject" 
+                    name="email_subject" 
+                    handleValueChange={(e) => setSubject(e)} value={subject}
+                    error={errors.email_subject}
+                  />
+
                   <label for="Message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Message</label>
-                  <textarea cols="40" rows="10" type="text" value={message} onChange={(e) => setMessage(e.target.value)} id='message' class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="" required />
-                  {/* <button type='submit' className='border-card2 border-2  hover:bg-card1 hover:text-primary px-10 py-2 rounded-md '>Submit</button> */}
-                  <HoverButton title="Send Message" />
+                  <textarea cols="40" rows="10" type="text" name="message" value={message} onChange={(e) => setMessage(e.target.value)} id='message' class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="" />
+                  <span>{sendMessage}</span>
+                  <button disabled={sending} type='submit' className='border-card2 border-2  hover:bg-card1 hover:text-primary px-10 py-2 rounded-md font-[700]'>
+                   {sending ? "Sending..." :  "Send Message" }
+                  </button>
+                 
               </div>
             </form>
           </div> 
