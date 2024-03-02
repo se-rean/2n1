@@ -4,13 +4,13 @@ import Timelines from '../../components/Timelines'
 import HeaderText from '../../components/HeaderText'
 function Timeline() {
   return (
-    <div className='content-container bg-primary'>
+    <div className='content-container'>
        <Header text="TIMELINE"/>
        <div className='pt-10 pb-10 overflow-hidden lg:w-[900px]'>
-          <p className='text-[16px]'>
+          <p className='text-[16px] text-secondaryText'>
             08
           </p> 
-          <HeaderText text="Here's a broad yearly timeline for a 2in1 promotions and virtual solutions startup from 2018 to 2023:" />
+          <HeaderText width="100%" text="Here's a broad yearly timeline for a 2in1 promotions and virtual solutions startup from 2018 to 2023:" />
           {/* <p className='text-[16px]'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla sodales dolor de arcu sagittis ultrices felis, faucibus tortor sed. In tristique ipsum fermentum diam lorem ipsum toleroeise molaris. 
           </p>

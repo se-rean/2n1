@@ -3,6 +3,7 @@ import 'animate.css';
 import { ThemeProvider, createTheme  } from '@mui/material/styles';
 import React from 'react' 
 import AppRoute from './routes';
+import Background from './components/Background';
 
 const theme = createTheme ({
   typography: {
@@ -16,10 +17,10 @@ const theme = createTheme ({
 function App() {
   return (
     <>
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={theme}> 
+    <Background />
       <AppRoute />
     </ThemeProvider>
-     
      </>
   );
 }

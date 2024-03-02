@@ -17,7 +17,7 @@ function Footer() {
         ))
        }
       </div>
-      <div className='w-full self-center flex  justify-center items-center gap-7'> 
+      <div className='w-full self-center flex  justify-center items-center gap-7  text-secondaryText'> 
       <h1>{`@${new Date(Date.now()).getFullYear()} software solutions`}</h1>
         {/* <Header text={`@${new Date(Date.now()).getFullYear()} software solutions`}/> */}
       </div>

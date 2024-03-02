@@ -11,7 +11,7 @@ function Testimonial() {
        <Header text="TESTIMONIAL"/>
         <div className='pt-10 pb-10 lg:w-[900px]'>
           <PageNumber page="05" /> 
-          <HeaderText text="Voices of Satisfaction: Elevating 2in1 Promotions & VA Solutions Through Client Testimonials" />
+          <HeaderText width="100%" text="Voices of Satisfaction: Elevating 2in1 Promotions & VA Solutions Through Client Testimonials" />
           {/* <div className='lg:flex lg:gap-5'>
             <p className='text-[16px]'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla sodales dolor de arcu sagittis ultrices felis, faucibus tortor sed. In tristique ipsum fermentum diam lorem ipsum toleroeise molaris. 

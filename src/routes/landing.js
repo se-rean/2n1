@@ -11,45 +11,48 @@ import Skills from '../pages/landing-page/Skills'
 import Timeline from '../pages/landing-page/Timeline'
 import Contact from '../pages/landing-page/Contact'
 import Footer from '../layouts/Footer'
+import Background from '../components/Background'
 export default function LandingPage() {
 
 
 
   return (
-    <>
-    <section id='top' className=''>
+    <> 
+     
+      <section id='top' className=''>
         <Top />
       </section>
-      <section id='services' className='pt-[5.5rem] lg:pt-20 z-10'>
-        <Services />
+      <section id='services' className='pt-[5.5rem] lg:pt-20 z-10  bg-prmBG '>
+        <Services /> 
       </section>
-      <section id='about' className='pt-20'>
+      <section id='about' className='pt-20  bg-secBG'>
         <About />
       </section>
-      <section id='portfolio' className='pt-20 bg-[#1b212c]'>
+      <section id='portfolio' className='pt-20 bg-secBG'>
         <Portfolio />
       </section>
       {/* <section id='pricing' className='pt-20'>
         <Pricing />
       </section> */}
-      <section id='testimonial' className='pt-20 '>
+      <section id='testimonial' className='pt-20 bg-prmBG'>
         <Testimonial />
       </section>
       {/* <section id='partners' className='pt-20'>
         <Partners />
       </section> */}
-      <section id='blog' className='pt-20  bg-[#1b212c]'>
+      <section id='blog' className='pt-20  bg-secBG'>
         <Blog />
       </section>
       {/* <section id='skills' className='pt-20 bg-[#1b212c]'>
         <Skills />
       </section> */}
-      <section id='timeline' className='pt-20'>
+      <section id='timeline' className='pt-20 bg-prmBG'>
         <Timeline />
       </section>
-      <section id='contact' className='pt-20 bg-[#1b212c]'>
+      <section id='contact' className='pt-20 bg-secBG'>
         <Contact />
       </section>
+   
       </>
   )
 }

@@ -11,6 +11,8 @@ import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
 import { Menu as MenuIcon, Close, Phone, Email} from '@mui/icons-material/';
 import nav from '../nav-items';
+import ThemeControll from '../../components/ThemeControll';
+import FloatButton from '../../components/FloatButton';
 
 const variants = {
   open: { opacity: 1, x: 0 },
@@ -67,12 +69,12 @@ function RenderContent({type, handleToggleDrawer, handleNavLinkClick}) {
         nav && nav.map((i, index) => (
             // eslint-disable-next-line jsx-a11y/anchor-is-valid
             <a key={index}>
-              <li style={customStyle} className={`list-none hover:cursor-pointer ${ focus === index ? 'text-primaryText ' : 'text-secondary'} hover:text-primaryText`} onClick={() => handleRedirect(index, i.link)} key={index}>
+              <li style={customStyle} className={`list-none hover:cursor-pointer ${ focus === index ? 'text-primaryText ' : 'text-navText'} hover:text-primaryText`} onClick={() => handleRedirect(index, i.link)} key={index}>
                   <p style={customStyle}>{i.label}</p>
               </li>
-            </a>
+            </a> 
           ))
-      }
+      }  
     </ul>
   )
 }
@@ -112,15 +114,18 @@ const isDesktop = useResponsive('up', 'xl');
     }}>
         {
             isDesktop && (
-              <div className='w-[100%] h-[30px]  absolute left-0 z-30 flex justify-around items-center text-sm'>
+              <div className='w-[100%] h-[30px]  absolute left-0 z-30 flex justify-around items-center text-sm  text-navText'>
                 <p className=''>Need help or need a hand? We got a VA for that!</p>
                 <div className='flex gap-4 '>  
-                  <a className='hover:text-primaryText' href='mailto:vic@2in1.com.au'><Email sx={{ width: '20px' }}/> vic@2in1.com.au</a>
+                  <a className='hover:text-primaryText ' href='mailto:vic@2in1.com.au'><Email sx={{ width: '20px' }}/> vic@2in1.com.au</a>
                   <p><Phone sx={{ width: '20px' }}/> <a className='hover:text-primaryText' href='tel:1300 711 000'>1300 711 000</a> | <a className='hover:text-primaryText' href='tel:1300 711 000'>0411 500 700</a></p>
+                  { <ThemeControll /> }
                 </div>
             </div>
             ) 
         }
+      { scrollPosition > 0 && isDesktop && <FloatButton /> }
+     
       <AppBar sx={{ boxShadow: 0, background: `${scrollPosition > 0 ? "#1b212c" : "rgba(0, 0, 0, 0.01)"}`, opacity: 1, height: '100px', justifyContent: 'space-between',
       padding: '0px 10px', }} position="static">
         <Toolbar >

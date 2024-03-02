@@ -29,12 +29,12 @@ function Portfolio() {
       <Header text="PORTFOLIO" />
         <div className='pt-10 pb-10 lg:w-[900px]'>
           <PageNumber page="03" /> 
-          <HeaderText text="Showcasing Success: A Portfolio of Achievements and Expertise. Explore our journey, discover our impact, and witness the excellence that defines us. Your vision, our commitment – a portfolio that speaks volumes." />
+          <HeaderText width="100%" text="Showcasing Success: A Portfolio of Achievements and Expertise. Explore our journey, discover our impact, and witness the excellence that defines us. Your vision, our commitment – a portfolio that speaks volumes." />
           <div className='flex gap-5 flex-wrap'>
             {
               portfolioFilter.map((f, index) => (
                 <div key={index}>
-                <button key={f.value} onClick={() => handleFilter(f.value)} className={`hover:duration-300 hover:bg-card1 px-4 ${activeFilter === f.value ? 'bg-card1 text-primary': ''} py-[7px] hover:text-primary font-[500] text-[14px]`}>
+                <button key={f.value} onClick={() => handleFilter(f.value)} className={`hover:duration-300 hover:bg-card1 px-4 ${activeFilter === f.value ? 'bg-card1 text-tertiaryText ': ' text-secondaryText'} py-[7px] hover:text-primary font-[500] text-[14px]`}>
                   {f.label}
                 </button>
                 </div>

@@ -12,7 +12,7 @@ function PulseButton() {
         <div className='item-center justify-center pulse  opacity-75 border-4 w-[60px] h-[60px] shadow-lg rounded-full  lg:h-[90px] lg:w-[90px]'>
          
           </div>
-        <div className='pulse absolute ml-[-15px] w-5  lg:w-6 '>
+        <div className='pulse absolute ml-[-15px] w-5  lg:w-6 text-navText'>
           <PlayArrow sx={{ fontSize: '40px' }} />
         </div>
       </div>
