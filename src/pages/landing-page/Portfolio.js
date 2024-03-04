@@ -14,12 +14,12 @@ function Portfolio() {
   const [activeFilter, setActiveFilter] = useState('all')
   
   useEffect(() => {
-    setFilteredContent(PortfolioData.slice(0,12))
+    setFilteredContent(PortfolioData.slice(0,6))
   }, [])
 
   const handleFilter = (filter) => {
     setFilteredContent(contents => {
-      if (filter === 'all') return PortfolioData.slice(0,4)
+      if (filter === 'all') return PortfolioData.slice(0,6)
       return PortfolioData.filter(c => c.type === filter).slice(0, 4)
     })
     setActiveFilter(filter) 
@@ -84,13 +84,13 @@ function Portfolio() {
                       </div>  
                  
                ))
-             }
-             <HoverButton onClick={() => navigate('/portfolio')} title="View All" />
+             } 
              {/* </Swipper>  */}
             </div>
+            <HoverButton onClick={() => navigate('/portfolio')} title="View All" />
           </div>
-          </AnimateWrapper>
-        </div>
+          </AnimateWrapper> 
+        </div> 
     </div>
   )
 }

@@ -24,15 +24,14 @@ export const partnersData = [
 
 export const PortfolioData = [
   { type: 'Virtual Assistance', src: require('../assets/BLOG POST -1.png'), title: 'BLOG POST', subTitle: 'asdasd', row:2},
+  { type: 'Virtual Assistance', src: require('../assets/BLOG POST-2.png'), title: 'LOGO CREATION', subTitle: 'asdasd', row: 2 }, 
   { type: 'Web Development', src: require('../assets/_2in1- WEB DEVELOPMENT.png'), title: 'asdasd', subTitle: 'dsad',row: 2 }, 
-  { type: 'Virtual Assistance', src: require('../assets/BLOG POST-2.png'), title: 'LOGO CREATION', subTitle: 'asdasd', row: 2 },
   { type: 'Web Development', src: require('../assets/_2in1- WEB DEVELOPMENT (1).png'), title: 'asdasd', subTitle: 'dsad',row: 2 },  
-  { type: 'Virtual Assistance', src: require('../assets/LOGO CREATION.png'), title: 'LOGO CREATION', subTitle: 'asdasd', row: 2 },
-  // { type: 'Virtual Assistance', src: require('../assets/PORTFOLIO-1.png'), title: 'Content Creation', subTitle: 'asdasd', row: 2 }, 
+  { type: 'Digital Marketing', src: require('../assets/_ 2in1- DIGITAL MARKETING (5).png'), title: 'asdasd', subTitle: 'dsad',row: 2 }, 
   { type: 'Digital Marketing', src: require('../assets/_ 2in1- DIGITAL MARKETING (3).png'), title: 'asdasd', subTitle: 'dsad',row: 2 }, 
+  { type: 'Virtual Assistance', src: require('../assets/LOGO CREATION.png'), title: 'LOGO CREATION', subTitle: 'asdasd', row: 2 },
   { type: 'Digital Marketing', src: require('../assets/_ 2in1- DIGITAL MARKETING (2).png'), title: 'asdasd', subTitle: 'dsad',row: 2 }, 
   { type: 'Digital Marketing', src: require('../assets/_ 2in1- DIGITAL MARKETING (4).png'), title: 'asdasd', subTitle: 'dsad',row: 2 }, 
-  { type: 'Digital Marketing', src: require('../assets/_ 2in1- DIGITAL MARKETING (5).png'), title: 'asdasd', subTitle: 'dsad',row: 2 }, 
 ]
 
 export const portfolioFilter = [
@@ -40,7 +39,7 @@ export const portfolioFilter = [
   { label: 'Virtual Assistance', value: 'Virtual Assistance' },
   { label: 'Web Development', value: 'Web Development' },
   { label: 'Digital Marketing', value: 'Digital Marketing' }, 
-  { label: 'SMS Marketing', value: 'SMS Marketing' }, 
+  // { label: 'SMS Marketing', value: 'SMS Marketing' }, 
 ]
 
 
