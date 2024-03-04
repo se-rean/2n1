@@ -34,9 +34,9 @@ function Blog() {
                 <div key={index} className='mx-2 flex flex-col justify-center h-[650px] lg:w-[30%] overflow-hidden'>
                   <p className='text-[18px] text-[#62728f]'>{c.date}</p>
                   <p onClick={() => navigate(`/blog#${c.id}`)} className='pb-[40px] text-[22px]  text-secondaryText font-[800] cursor-pointer hover:underline hover:underline-offset-2'>{c.title}</p>
-                  <div className='cursor-pointer overflow-hidden w-full h-[350px] relative blogpost'>
+                  <div className='shadow-md shadow-cyan-500/50 rounded-lg cursor-pointer overflow-hidden w-full h-[350px] relative blogpost'>
                     <p className='mt-10 text-ellipsis  text-[14px] text-secondaryText absolute z-10 bottom-0 bg-primary blog-message'>{c.desc}</p> 
-                    <img onClick={() => navigate(`/blog#${c.id}`)} className='hover-images w-full h-full' src={c.src} alt=''/>
+                    <img className="" onClick={() => navigate(`/blog#${c.id}`)} className='hover-images w-full h-full' src={c.src} alt=''/>
                     
                   </div> 
                   

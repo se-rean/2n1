@@ -29,7 +29,7 @@ function Timelines() {
             }}
             once={true}
           >
-                <div className="box-border   p-4 drop-shadow-2xl hover:drop-shadow-xl  bg-gradient-to-b  bg-card2 flex justify-center  flex-col items-left"> 
+                <div className="shadow-md shadow-cyan-500/50 rounded-lg box-border   p-4 drop-shadow-2xl hover:drop-shadow-xl  bg-gradient-to-b  bg-card2 flex justify-center  flex-col items-left"> 
                   <p className='text-[15px] space-x-2 font-[500] tracking-[4px]  text-timelineText'>{t.date}</p>
                 
                   <p className='text-[16px] font-[700]   text-timelineText '>{t.title}</p> 

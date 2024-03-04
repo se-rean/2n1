@@ -50,13 +50,13 @@ export default function PortfolioPage() {
         </p>
         </AnimateWrapper>
         <AnimateWrapper>
-        <img className='w-[100%]' src={require('../assets/BLOG Banner- Essential Digital Tools.png')} alt=''/>
+        <img className='w-[100%] shadow-md shadow-cyan-500/50 rounded-lg' src={require('../assets/BLOG Banner- Essential Digital Tools.png')} alt=''/>
         </AnimateWrapper>
         <AnimateWrapper>
-        <img className='w-[100%]' src={require('../assets/BLOG Banner- Essential Digital Tools.png')} alt=''/>
+        <img className='w-[100%] shadow-md shadow-cyan-500/50 rounded-lg' src={require('../assets/BLOG Banner- Essential Digital Tools.png')} alt=''/>
         </AnimateWrapper>
         <AnimateWrapper>
-        <img className='w-[100%]' src={require('../assets/BLOG Banner- Essential Digital Tools.png')} alt=''/>
+        <img className='w-[100%] shadow-md shadow-cyan-500/50 rounded-lg' src={require('../assets/BLOG Banner- Essential Digital Tools.png')} alt=''/>
         </AnimateWrapper>
         <AnimateWrapper>
         <p className='lg:ml-10 font-[500] tracking-wide leading-7 text-secondaryText'>
@@ -87,7 +87,7 @@ export default function PortfolioPage() {
         </p>
         </AnimateWrapper>
         <AnimateWrapper>
-        <img className='w-[100%]' src={require('../assets/BLOG Banner- Essential Digital Tools.png')} alt=''/>
+        <img className='w-[100%] shadow-md shadow-cyan-500/50 rounded-lg' src={require('../assets/BLOG Banner- Essential Digital Tools.png')} alt=''/>
         </AnimateWrapper>
         <AnimateWrapper>
         <p className='lg:ml-10 font-[500] tracking-wide leading-7 text-secondaryText'>
@@ -99,10 +99,10 @@ export default function PortfolioPage() {
         </p>
         </AnimateWrapper>
         <AnimateWrapper>
-        <img className='w-[100%]' src={require('../assets/BLOG Banner- Essential Digital Tools.png')} alt=''/>
+        <img className='w-[100%] shadow-md shadow-cyan-500/50 rounded-lg' src={require('../assets/BLOG Banner- Essential Digital Tools.png')} alt=''/>
         </AnimateWrapper>
         <AnimateWrapper>
-        <img className='w-[100%]' src={require('../assets/BLOG Banner- Essential Digital Tools.png')} alt=''/>
+        <img className='w-[100%] shadow-md shadow-cyan-500/50 rounded-lg' src={require('../assets/BLOG Banner- Essential Digital Tools.png')} alt=''/>
         </AnimateWrapper>
         <AnimateWrapper>
         <HeaderText text="Why Choose 2in1 for Virtual Assistance:" />
@@ -155,6 +155,7 @@ export default function PortfolioPage() {
   const renderWebDesign = () => {
     return <>
       <div id="1" className='mt-10 lg:w-[900px] flex flex-col blogpost gap-10 py-10'>
+      <AnimateWrapper>
         <HeaderText font-size="50px" text="WEB DEVELOPMENT"/>
         <p className='lg:ml-10 font-[500] tracking-wide leading-7 text-secondaryText'>
         At 2in1, we are committed to
@@ -168,6 +169,8 @@ deliver websites that not only
 look stunning but also function
 seamlessly.
         </p>
+        </AnimateWrapper>
+        <AnimateWrapper>
         <HeaderText text="Our Web Development Services
 
 Include:" />
@@ -178,6 +181,8 @@ solutions to meet your unique business
 requirements, ensuring a personalized
 online presence.
         </p>
+        </AnimateWrapper>
+        <AnimateWrapper>
         <p className='lg:ml-10 font-[500] tracking-wide leading-7 text-secondaryText'>
         <span className='text-primaryText'>Responsive Design: </span>
          Websites
@@ -185,6 +190,8 @@ optimized for a flawless experience
 across various devices, providing
 accessibility to a wider audience.
         </p>
+        </AnimateWrapper>
+        <AnimateWrapper>
         <p className='lg:ml-10 font-[500] tracking-wide leading-7 text-secondaryText'>
         <span className='text-primaryText'>E-commerce Development: </span>
          Robust
@@ -192,13 +199,18 @@ and user-friendly e-commerce
 platforms to help you establish and
 grow your online store.
         </p>
-        <img className='w-[100%]' src={require('../assets/BLOG Banner- Essential Digital Tools.png')} alt=''/>
-        
+        </AnimateWrapper>
+        <AnimateWrapper>
+        <img className='w-[100%] shadow-md shadow-cyan-500/50 rounded-lg' src={require('../assets/_2in1- WEB DEVELOPMENT (2).png')} alt=''/>
+        </AnimateWrapper>
+        <AnimateWrapper>
         <p className='lg:ml-10 font-[500] tracking-wide leading-7 text-secondaryText'>
         Tailored strategies for a personalized touch in the
 digital world. Your business, your way, with our
 expertise.
         </p>
+        </AnimateWrapper>
+        <AnimateWrapper>
         <p className='lg:ml-10 font-[500] tracking-wide leading-7 text-secondaryText'>
         <span className='text-primaryText'>Content Management Systems
 (CMS): </span>
@@ -206,6 +218,8 @@ expertise.
 platforms, empowering you to manage
 and update your website effortlessly.
         </p>
+        </AnimateWrapper>
+        <AnimateWrapper>
         <p className='lg:ml-10 font-[500] tracking-wide leading-7 text-secondaryText'>
         <span className='text-primaryText'>Web Maintenance: </span>
          Ongoing support and
@@ -213,6 +227,8 @@ maintenance services to keep your
 website running smoothly, ensuring it
 stays up-to-date and secure.
         </p>
+        </AnimateWrapper>
+        <AnimateWrapper>
         <p className='lg:ml-10 font-[500] tracking-wide leading-7 text-secondaryText'>
         <span className='text-primaryText'>SEO Optimization: </span>
          Implementation of
@@ -220,9 +236,17 @@ SEO best practices to enhance your
 website&#39;s visibility and drive organic
 traffic.
         </p>
-        <img className='w-[100%]' src={require('../assets/BLOG Banner- Essential Digital Tools.png')} alt=''/>
-        <img className='w-[100%]' src={require('../assets/BLOG Banner- Essential Digital Tools.png')} alt=''/>
-        <img className='w-[100%]' src={require('../assets/BLOG Banner- Essential Digital Tools.png')} alt=''/> 
+        </AnimateWrapper>
+        <AnimateWrapper>
+        <img className='w-[100%] shadow-md shadow-cyan-500/50 rounded-lg' src={require('../assets/_2in1- WEB DEVELOPMENT (3).png')} alt=''/>
+        </AnimateWrapper>
+        <AnimateWrapper>
+        <img className='w-[100%] shadow-md shadow-cyan-500/50 rounded-lg' src={require('../assets/_2in1- WEB DEVELOPMENT (4).png')} alt=''/>
+        </AnimateWrapper>
+        <AnimateWrapper>
+        <img className='w-[100%] shadow-md shadow-cyan-500/50 rounded-lg' src={require('../assets/_2in1- WEB DEVELOPMENT (5).png')} alt=''/> 
+        </AnimateWrapper>
+        <AnimateWrapper>
         <HeaderText text="Why Choose 2in1 for Web Development:" />
         <p className='lg:ml-10 font-[500] tracking-wide leading-7 text-secondaryText'>
         <span className='text-primaryText'>Expertise: </span>
@@ -231,6 +255,8 @@ developers is well-versed in the
 latest technologies and industry
 trends.
         </p>
+        </AnimateWrapper>
+        <AnimateWrapper>
         <p className='lg:ml-10 font-[500] tracking-wide leading-7 text-secondaryText'>
         <span className='text-primaryText'>Collaborative Approach: </span>
          We work
@@ -238,6 +264,8 @@ closely with you to understand
 your goals, ensuring the end
 result aligns with your vision.
         </p>
+        </AnimateWrapper>
+        <AnimateWrapper>
         <p className='lg:ml-10 font-[500] tracking-wide leading-7 text-secondaryText'>
         <span className='text-primaryText'>Quality Assurance: </span>
          Rigorous testing
@@ -245,16 +273,21 @@ processes to guarantee a bug-
 free and high-performance
 website.
         </p>
+        </AnimateWrapper>
+        <AnimateWrapper>
         <p className='font-[500] tracking-wide leading-7 text-secondaryText'>
         Elevate your online presence
 with our Web Development
 services.
         </p>
+        </AnimateWrapper>
+        <AnimateWrapper>
         <p className='font-[500] tracking-wide leading-7 text-secondaryText'>
         Contact 2in1 Promotions &amp; VA
 Solutions today to embark on a
 journey of digital excellence.
         </p>
+        </AnimateWrapper>
       </div>
     </>
   }
@@ -262,6 +295,7 @@ journey of digital excellence.
   const renderDigitalMarketing = () => {
     return <>
       <div id="3" className='mt-10 lg:w-[900px] flex flex-col blogpost gap-10 py-10'>
+      <AnimateWrapper>
         <HeaderText font-size="50px" text="DIGITAL
 
 MARKETING"/>
@@ -276,9 +310,13 @@ enhance your brand visibility,
 engage your audience, and drive
 measurable growth.
         </p>
+        </AnimateWrapper>
+        <AnimateWrapper>
         <HeaderText text="Our Digital Marketing
 
 Services Include:" />
+</AnimateWrapper>
+ <AnimateWrapper>
         <p className='lg:ml-10 font-[500] tracking-wide leading-7 text-secondaryText'>
         <span className='text-primaryText'>Search Engine Optimization (SEO): </span>
         
@@ -286,6 +324,8 @@ Boost your website&#39;s visibility on search
 engines, increase organic traffic, and
 improve your online rankings.
         </p>
+        </AnimateWrapper>
+        <AnimateWrapper>
         <p className='lg:ml-10 font-[500] tracking-wide leading-7 text-secondaryText'>
         <span className='text-primaryText'>Social Media Management: </span>
          Engage
@@ -293,7 +333,11 @@ and connect with your audience on
 popular social media platforms through
 targeted and compelling content.
         </p>
-        <img className='w-[100%]' src={require('../assets/BLOG Banner- Essential Digital Tools.png')} alt=''/>
+        </AnimateWrapper>
+        <AnimateWrapper>
+        <img className='w-[100%] shadow-md shadow-cyan-500/50 rounded-lg' src={require('../assets/digital marketing/_ 2in1- DIGITAL MARKETING.png')} alt=''/>
+        </AnimateWrapper>
+        <AnimateWrapper>
         <p className='lg:ml-10 font-[500] tracking-wide leading-7 text-secondaryText'>
         <span className='text-primaryText'>Content Marketing: </span>
          Develop and
@@ -302,7 +346,8 @@ resonates with your audience,
 establishing your brand as an authority in
 your industry.
         </p>
-      
+        </AnimateWrapper>
+        <AnimateWrapper>
         <p className='lg:ml-10 font-[500] tracking-wide leading-7 text-secondaryText'>
         <span className='text-primaryText'>Email Marketing: </span>
          Craft personalized
@@ -310,6 +355,8 @@ and effective email campaigns to
 nurture leads, retain customers, and
 drive conversions.
         </p>
+        </AnimateWrapper>
+        <AnimateWrapper>
         <p className='lg:ml-10 font-[500] tracking-wide leading-7 text-secondaryText'>
         <span className='text-primaryText'>Pay-Per-Click (PPC) Advertising: </span>
         
@@ -318,8 +365,14 @@ advertising campaigns to drive
 immediate traffic and achieve specific
 business objectives.
         </p>
-        <img className='w-[100%]' src={require('../assets/BLOG Banner- Essential Digital Tools.png')} alt=''/>
-        <img className='w-[100%]' src={require('../assets/BLOG Banner- Essential Digital Tools.png')} alt=''/>
+        </AnimateWrapper>
+        <AnimateWrapper>
+        <img className='w-[100%] shadow-md shadow-cyan-500/50 rounded-lg' src={require('../assets/digital marketing/_ 2in1- DIGITAL MARKETING (2).png')} alt=''/>
+        </AnimateWrapper>
+        <AnimateWrapper>
+        <img className='w-[100%] shadow-md shadow-cyan-500/50 rounded-lg' src={require('../assets/digital marketing/_ 2in1- DIGITAL MARKETING (3).png')} alt=''/>
+        </AnimateWrapper>
+        <AnimateWrapper>
         <p className='lg:ml-10 font-[500] tracking-wide leading-7 text-secondaryText'>
         <span className='text-primaryText'>Online Reputation Management
 (ORM): </span>
@@ -327,6 +380,8 @@ business objectives.
 online reputation, ensuring a positive image
 across digital platforms.
         </p>
+        </AnimateWrapper>
+        <AnimateWrapper>
         <p className='lg:ml-10 font-[500] tracking-wide leading-7 text-secondaryText'>
         <span className='text-primaryText'>Analytics and Reporting: </span>
          Regularly analyze
@@ -334,12 +389,19 @@ campaign performance, providing detailed
 insights and recommendations for continuous
 improvement.
         </p>
-        <img className='w-[100%]' src={require('../assets/BLOG Banner- Essential Digital Tools.png')} alt=''/>
-        <img className='w-[100%]' src={require('../assets/BLOG Banner- Essential Digital Tools.png')} alt=''/>
-         
+        </AnimateWrapper>
+        <AnimateWrapper>
+        <img className='w-[100%] shadow-md shadow-cyan-500/50 rounded-lg' src={require('../assets/digital marketing/_ 2in1- DIGITAL MARKETING (4).png')} alt=''/>
+        </AnimateWrapper>
+        <AnimateWrapper>
+        <img className='w-[100%] shadow-md shadow-cyan-500/50 rounded-lg' src={require('../assets/digital marketing/_ 2in1- DIGITAL MARKETING (5).png')} alt=''/>
+        </AnimateWrapper>
+        <AnimateWrapper>
         <HeaderText text="Why Choose 2in1 for
 
 Digital Marketing:" />
+</AnimateWrapper>
+ <AnimateWrapper>
         <p className='lg:ml-10 font-[500] tracking-wide leading-7 text-secondaryText'>
         <span className='text-primaryText'>Strategic Approach: </span>
          We tailor
@@ -348,6 +410,8 @@ strategies to align with your
 business goals and target
 audience.
         </p>
+        </AnimateWrapper>
+        <AnimateWrapper>
         <p className='lg:ml-10 font-[500] tracking-wide leading-7 text-secondaryText'>
         <span className='text-primaryText'>Collaborative Approach: </span> 
          We work
@@ -355,6 +419,8 @@ closely with you to understand
 your goals, ensuring the end
 result aligns with your vision.
         </p>
+        </AnimateWrapper>
+        <AnimateWrapper>
         <p className='lg:ml-10 font-[500] tracking-wide leading-7 text-secondaryText'>
         <span className='text-primaryText'>Data-Driven Decision Making: </span> 
          Utilize
@@ -362,6 +428,8 @@ analytics to make informed
 decisions, optimizing campaigns
 for maximum effectiveness.
         </p>
+        </AnimateWrapper>
+        <AnimateWrapper>
         <p className='lg:ml-10 font-[500] tracking-wide leading-7 text-secondaryText'>
         <span className='text-primaryText'>Creative Content: </span> 
          Our team creates
@@ -369,16 +437,21 @@ engaging and relevant content
 to captivate your audience and
 foster brand loyalty.
         </p>
+        </AnimateWrapper>
+        <AnimateWrapper>
         <p className='font-[500] tracking-wide leading-7 text-secondaryText'>
         Elevate your digital presence and
 achieve your business objectives
 with 2in1 Promotions &amp; VA
 Solutions.
         </p>
+        </AnimateWrapper>
+        <AnimateWrapper>
         <p className='font-[500] tracking-wide leading-7 text-secondaryText'>
         Contact us today to embark on a
 journey of digital success.
         </p>
+        </AnimateWrapper>
       </div>
     </>
   }
@@ -390,11 +463,10 @@ journey of digital success.
     } else if (window.location.search.replace('?', '').replace('%20', ' ').toLowerCase() === "") {
 
     } else if (window.location.search.replace('?', '').replace('%20', ' ').toLowerCase() === "virtual assistance") {
-
     } else {
       navigate('/')
     }
-  }, [])
+  }, [filter])
 
   return (
     <div className='content-container flex justify-center items-center h-[100%] bg-secBG'>

@@ -74,7 +74,7 @@ function Portfolio() {
                     }}
                     once={true}
                   >
-                        <img className='w-full h-[100%] object-fill opacity-[70%]' src={c.src} alt='' />
+                        <img className='shadow-md shadow-cyan-500/50 rounded-lg w-full h-[100%] object-fill opacity-[70%] ' src={c.src} alt='' />
                         </AnimateWrapper>
                         {/* <div
                           className='flex flex-col absolute h-[7rem] bg-primary bottom-0 w-[30vh] py-4 justify-start lg:justify-center px-5 text-start portfolio-content'>

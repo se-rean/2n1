@@ -9,7 +9,7 @@ export default function BlogPost() {
       <div id="1" className='mt-10 lg:w-[900px] flex flex-col blogpost gap-10'>
         <p className='text-[18px] text-[#62728f]'>March 1, 2024</p>
         <HeaderText text="WHY VIRTUAL ASSISTANTS ARE GREAT FOR BUSINESSES"/>
-        <img className='w-[100%]' src={require('../assets/BLOG Banner- Essential Digital Tools.png')} alt=''/>
+        <img className='w-[100%]  shadow-md shadow-cyan-500/50 rounded-lg' src={require('../assets/BLOG Banner- Essential Digital Tools.png')} alt=''/>
         <h1 className='font-[600] text-secondaryText'>Learn why having a virtual assistant is beneficial for your business.</h1>
         <span className='lg:ml-10 font-[500] tracking-wide leading-7 text-secondaryText'>During the pandemic, the world faced uncertainty, causing chaos in every country. The fear of illness affected everyone. However, amidst this, businesses had to rethink their economic strategies. One emerging role gaining popularity is that of a virtual assistant.
 
@@ -38,7 +38,7 @@ export default function BlogPost() {
       <div id="2" className='mt-10 lg:w-[900px] flex flex-col blogpost gap-10'>
         <p className='text-[18px] text-[#62728f]'>March 1, 2024</p>
         <HeaderText text="Essential Digital Tools for Successful Start-Ups"/>
-        <img className='w-[100%]' src={require('../assets/Blog Banner 1.png')} alt=''/>
+        <img className='w-[100%] shadow-md shadow-cyan-500/50 rounded-lg' src={require('../assets/Blog Banner 1.png')} alt=''/>
         <p className='font-[500] tracking-wide leading-7 text-secondaryText'>Are you ready to embark on your digital journey? Starting up online demands courage – the kind that pushes you to connect with people, influence perspectives, overcome challenges, and build a brand that truly reflects you. The road won't be easy, but here's a crucial piece of advice: just as you wouldn't go to war without a gun, don't start your digital business without the right tools. Consider this era of digital entrepreneurship as a battlefield, and to emerge victorious, preparation is key.
         </p>
         <p className='font-[600] text-secondaryText'>
@@ -59,7 +59,6 @@ export default function BlogPost() {
             <li>Benefits: Offers a visual and intuitive project management approach, tracks progress, assigns tasks, and encourages collaboration among team members.</li>
           </ul>
         </p>
-
         <p>
         <span className='text-primaryText'>Asana</span>  (Task and Workflow Management): 
           <ul className='lg:ml-10 bullet text-secondaryText'>
@@ -94,7 +93,7 @@ export default function BlogPost() {
       <div id="3" className='mt-10 lg:w-[900px] flex flex-col blogpost gap-10'>
         <p className='text-[18px] text-[#62728f]'>March 1, 2024</p>
         <HeaderText text="Unlock Growth with SMS Marketing – Reach, Engage, Succeed!"/>
-        <img className='w-[100%]' src={require('../assets/Blog Banner- SMS Marketing.png')} alt=''/>
+        <img className='w-[100%] shadow-md shadow-cyan-500/50 rounded-lg' src={require('../assets/Blog Banner- SMS Marketing.png')} alt=''/>
         <p className='font-[500] tracking-wide leading-7 text-secondaryText'>Customers and clients usually like getting messages in two ways: through
           SMS or Email. Nowadays, SMS is really good for business marketing. Let's
           talk about why SMS Marketing is helpful for growing a business and getting

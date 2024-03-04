@@ -32,7 +32,7 @@ function Contact() {
     .then(
       () => { 
         setSending(false) 
-        setSendMessage("Message Send!")
+        setSendMessage("")
       },
       (error) => {
         setSending(false)
