@@ -50,13 +50,13 @@ export default function PortfolioPage() {
         </p>
         </AnimateWrapper>
         <AnimateWrapper>
-        <img className='w-[100%] shadow-md shadow-cyan-500/50 rounded-lg' src={require('../assets/BLOG Banner- Essential Digital Tools.png')} alt=''/>
+        <img className='w-[100%] shadow-md shadow-cyan-500/50 rounded-lg' src={require('../assets/virtual assistance/2in1- VIRTUAL ASSISTANCE.png')} alt=''/>
         </AnimateWrapper>
         <AnimateWrapper>
-        <img className='w-[100%] shadow-md shadow-cyan-500/50 rounded-lg' src={require('../assets/BLOG Banner- Essential Digital Tools.png')} alt=''/>
+        <img className='w-[100%] shadow-md shadow-cyan-500/50 rounded-lg' src={require('../assets/virtual assistance/2in1- VIRTUAL ASSISTANCE (2).png')} alt=''/>
         </AnimateWrapper>
         <AnimateWrapper>
-        <img className='w-[100%] shadow-md shadow-cyan-500/50 rounded-lg' src={require('../assets/BLOG Banner- Essential Digital Tools.png')} alt=''/>
+        <img className='w-[100%] shadow-md shadow-cyan-500/50 rounded-lg' src={require('../assets/virtual assistance/2in1- VIRTUAL ASSISTANCE (3).png')} alt=''/>
         </AnimateWrapper>
         <AnimateWrapper>
         <p className='lg:ml-10 font-[500] tracking-wide leading-7 text-secondaryText'>
@@ -87,7 +87,7 @@ export default function PortfolioPage() {
         </p>
         </AnimateWrapper>
         <AnimateWrapper>
-        <img className='w-[100%] shadow-md shadow-cyan-500/50 rounded-lg' src={require('../assets/BLOG Banner- Essential Digital Tools.png')} alt=''/>
+        <img className='w-[100%] shadow-md shadow-cyan-500/50 rounded-lg' src={require('../assets/virtual assistance/2in1- VIRTUAL ASSISTANCE (4).png')} alt=''/>
         </AnimateWrapper>
         <AnimateWrapper>
         <p className='lg:ml-10 font-[500] tracking-wide leading-7 text-secondaryText'>
@@ -99,10 +99,10 @@ export default function PortfolioPage() {
         </p>
         </AnimateWrapper>
         <AnimateWrapper>
-        <img className='w-[100%] shadow-md shadow-cyan-500/50 rounded-lg' src={require('../assets/BLOG Banner- Essential Digital Tools.png')} alt=''/>
+        <img className='w-[100%] shadow-md shadow-cyan-500/50 rounded-lg' src={require('../assets/virtual assistance/2in1- VIRTUAL ASSISTANCE (5).png')} alt=''/>
         </AnimateWrapper>
         <AnimateWrapper>
-        <img className='w-[100%] shadow-md shadow-cyan-500/50 rounded-lg' src={require('../assets/BLOG Banner- Essential Digital Tools.png')} alt=''/>
+        <img className='w-[100%] shadow-md shadow-cyan-500/50 rounded-lg' src={require('../assets/virtual assistance/2in1- VIRTUAL ASSISTANCE (1).png')} alt=''/>
         </AnimateWrapper>
         <AnimateWrapper>
         <HeaderText text="Why Choose 2in1 for Virtual Assistance:" />

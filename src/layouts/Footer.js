@@ -6,10 +6,8 @@ import { Email, Phone } from '@mui/icons-material'
 
 function Footer() {
   const links = [
-    { title: 'facebook', img: 'https://2in1.com.au/wp-content/uploads/2023/07/NEWCIRCLELOGOwithQR-TR.png' },
-    { title: 'facebook', img: 'https://2in1.com.au/wp-content/uploads/2023/07/NEWCIRCLELOGOwithQR-TR.png' },
-    { title: 'facebook', img: 'https://2in1.com.au/wp-content/uploads/2023/07/NEWCIRCLELOGOwithQR-TR.png' },
-    { title: 'facebook', img: 'https://2in1.com.au/wp-content/uploads/2023/07/NEWCIRCLELOGOwithQR-TR.png' }
+    { title: 'instagram', img: require('../assets/social media/instagram.png'), url: 'https://www.instagram.com/2in1.com.au'},
+    { title: 'facebook', img: require('../assets/social media/facebook.png'), url: 'https://www.facebook.com/2in1.com.au' },
   ]
   return (
     <div className='flex flex-col w-full lg:w-[60%] py-10 z-50 ]'><div className='w-full p-20 pt-5 h-auto px-5 justify-between lg:flex-row lg:items-start flex flex-col gap-10'>
@@ -21,7 +19,7 @@ function Footer() {
         <HeaderText text="Sitemap" />
         <div className='lg:flex-row flex-col flex gap-10 lg:gap-20'>
           <div>
-            <FooterLinks text="FAQS" />
+            <FooterLinks text="FAQs" />
             <FooterLinks text="Blog" />
           </div>
           <div>
@@ -38,7 +36,7 @@ function Footer() {
         </div>
         <div className='w-full flex lg:justify-center lg:items-center gap-5'>
           {links.map((l, index) => (
-            <a href="#" key={index} className='w-[2em] h-[2em]'>
+            <a href={l.url} key={index} target="_blank" className='w-[2em] h-[2em]' rel="noreferrer">
               <img key={index} className='w-full h-full' src={l.img} alt='' />
             </a>
           ))}
