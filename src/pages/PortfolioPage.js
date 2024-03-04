@@ -7,7 +7,8 @@ export default function PortfolioPage() {
   const filterData = {
     "virtual assistance": true, 
     "web development": true, 
-    "digital marketing": true
+    "digital marketing": true,
+    "sms marketing": true
   }
   const [filter, setFilter] = useState(null) 
 
@@ -455,14 +456,110 @@ journey of digital success.
       </div>
     </>
   }
+
+  
+  const renderSmsMarketing = () => {
+    return <>
+      <div id="3" className='mt-10 lg:w-[900px] flex flex-col blogpost gap-10 py-10'>
+        <AnimateWrapper>
+          <HeaderText line-height="3rem" font-size="50px" text="SMS MARKETING/EMAIL MARKETING"/>
+          <p className='lg:ml-10 font-[500] tracking-wide leading-7 text-secondaryText'>
+            While we offer Email marketing as part of our VA Services, we mainly focus
+            on SMS marketing since this is more effective than Email Marketing.
+          </p>
+         
+        </AnimateWrapper>
+        <AnimateWrapper>
+          <img className='w-[100%] shadow-md shadow-cyan-500/50 rounded-lg' src={require('../assets/sms marketing/2in1- SMS MARKETING.png')} alt=''/>
+        </AnimateWrapper>
+        <AnimateWrapper>
+          <HeaderText text="WHY SMS MARKETING?" />
+        </AnimateWrapper>
+        <AnimateWrapper>
+          <p className='lg:ml-10 font-[500] tracking-wide leading-7 text-secondaryText'>
+          <span className='text-primaryText'>Instantaneous Delivery:  </span>
+            SMS messages are delivered instantly to recipients'
+            mobile devices, ensuring quick engagement with your audience.
+          </p>
+        </AnimateWrapper>
+        <AnimateWrapper>
+          <p className='lg:ml-10 font-[500] tracking-wide leading-7 text-secondaryText'>
+          <span className='text-primaryText'>Higher Open Rates: </span>
+            SMS messages typically have higher open rates of 98%
+            compared to email which is 20%, with many messages being read within
+            minutes of receipt and email is around 10 minutes or more on average.
+          </p>
+        </AnimateWrapper>
+         
+        <AnimateWrapper>
+          <p className='lg:ml-10 font-[500] tracking-wide leading-7 text-secondaryText'>
+            <span className='text-primaryText'>Click-Through Rate (CTR): </span>
+            SMS messages also boast higher click-through
+            rates, with an average CTR of about 36%, compared to email marketing's
+            average CTR of approximately 3.7%
+          </p>
+        </AnimateWrapper>
+        <AnimateWrapper>
+          <p className='lg:ml-10 font-[500] tracking-wide leading-7 text-secondaryText'>
+            <span className='text-primaryText'>Direct and Personal: </span>
+            SMS messages feel more personal and direct since they
+            appear directly on recipients' phones, making them ideal for time-sensitive
+            promotions or urgent updates.
+          </p>
+        </AnimateWrapper>
+        <AnimateWrapper>
+          <p className='lg:ml-10 font-[500] tracking-wide leading-7 text-secondaryText'>
+            <span className='text-primaryText'>Greater Reach: </span>
+            SMS marketing can reach a broader audience since almost
+            everyone has a mobile phone, regardless of whether they have internet
+            access or not
+          </p>
+        </AnimateWrapper> 
+        <AnimateWrapper>
+          <p className='lg:ml-10 font-[500] tracking-wide leading-7 text-secondaryText'>
+            <span className='text-primaryText'>Less Likely to be Filtered as Spam: </span>
+            SMS messages are less likely to be filtered
+            as spam compared to emails, ensuring that your message reaches your
+            audience's primary inbox.
+
+          </p>
+        </AnimateWrapper>
+        <AnimateWrapper>
+          <p className='lg:ml-10 font-[500] tracking-wide leading-7 text-secondaryText'>
+            <span className='text-primaryText'>Higher Engagement Rates: </span>
+            SMS messages often result in higher engagement
+            rates, with users more likely to interact with text messages compared to
+            emails.
+          </p>
+          <p className='lg:ml-10 font-[500] tracking-wide leading-7 text-secondaryText'>
+            <span className='text-primaryText'>Short and Concise Messaging: </span>
+            SMS messages have character limits, forcing
+            marketers to be concise and to the point, which can lead to clearer
+            communication and increased effectiveness.
+          </p>
+          <p className='lg:ml-10 font-[500] tracking-wide leading-7 text-secondaryText'>
+            <span className='text-primaryText'>Opt-in Participation: </span>
+            Since users must opt-in to receive SMS messages, your
+            audience is typically more receptive to your marketing efforts, leading to
+            higher conversion rates.
+          </p>
+        </AnimateWrapper> 
+        <AnimateWrapper>
+        <p className='font-[500] tracking-wide leading-7 text-secondaryText'>
+        These advantages make SMS marketing a powerful tool for reaching
+          and engaging with your audience in a more immediate and personal
+          way compared to email marketing.
+        </p> 
+          </AnimateWrapper>
+      </div>
+    </>
+  }
+
   const navigate =  useNavigate()
   useEffect(() => { 
     const search = window.location.search.replace('?', '').replace('%20', ' ').toLowerCase();
     if (filterData[search]) {
       setFilter(search) 
-    } else if (window.location.search.replace('?', '').replace('%20', ' ').toLowerCase() === "") {
-
-    } else if (window.location.search.replace('?', '').replace('%20', ' ').toLowerCase() === "virtual assistance") {
     } else {
       navigate('/')
     }
@@ -473,6 +570,7 @@ journey of digital success.
       {filter==="virtual assistance" && renderVirtualAssistance()}
       {filter==="web development" && renderWebDesign()}
       {filter==="digital marketing" && renderDigitalMarketing()}
+      {filter==="sms marketing" && renderSmsMarketing()}
     </div>
   )
 }

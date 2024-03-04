@@ -12,6 +12,7 @@ import Wrapper from './Wrapper'
 import BlogPost from '../pages/BlogPost'
 import PortfolioPage from '../pages/PortfolioPage'
 import PageNotFound from '../pages/PageNotFound'
+import TermsAndService from '../pages/TermsAndService'
 
 const AppRoute = () => {
   const RouteLinks = [
@@ -19,6 +20,7 @@ const AppRoute = () => {
     { path: '/services', page: <Services /> },
     { path: '/blog', page: <BlogPost /> },
     { path: '/portfolio', page: <PortfolioPage /> },
+    { path: '/terms-of-service', page: <TermsAndService /> },
     { path: '/', page: <LandingPage /> }
   ]
 
