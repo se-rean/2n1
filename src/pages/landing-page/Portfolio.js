@@ -87,7 +87,7 @@ function Portfolio() {
              } 
              {/* </Swipper>  */}
             </div>
-            <HoverButton onClick={() => navigate('/portfolio')} title="View All" />
+            { activeFilter && activeFilter !== "all" && <HoverButton onClick={() => navigate(`/portfolio?${activeFilter}`)} title="View All" /> }
           </div>
           </AnimateWrapper> 
         </div> 
