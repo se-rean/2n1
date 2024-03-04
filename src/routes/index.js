@@ -13,6 +13,7 @@ import BlogPost from '../pages/BlogPost'
 import PortfolioPage from '../pages/PortfolioPage'
 import PageNotFound from '../pages/PageNotFound'
 import TermsAndService from '../pages/TermsAndService'
+import FAQ from '../pages/FAQ'
 
 const AppRoute = () => {
   const RouteLinks = [
@@ -21,6 +22,7 @@ const AppRoute = () => {
     { path: '/blog', page: <BlogPost /> },
     { path: '/portfolio', page: <PortfolioPage /> },
     { path: '/terms-of-service', page: <TermsAndService /> },
+    { path: '/FAQ', page: <FAQ /> },
     { path: '/', page: <LandingPage /> }
   ]
 
