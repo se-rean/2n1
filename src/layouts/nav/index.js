@@ -95,7 +95,7 @@ export default function NavBar({
 };
 
 const isDesktop = useResponsive('up', 'xl'); 
-
+  console.log(window.location)
   useEffect(() => {
       window.addEventListener('scroll', handleScroll, { passive: true });
       return () => {
@@ -126,7 +126,7 @@ const isDesktop = useResponsive('up', 'xl');
         }
       { scrollPosition > 0 && isDesktop && <FloatButton /> }
      
-      <AppBar sx={{ boxShadow: 0, background: `${scrollPosition > 0 ? "#1b212c" : "rgba(0, 0, 0, 0.01)"}`, opacity: 1, height: '100px', justifyContent: 'space-between',
+      <AppBar sx={{ boxShadow: 0, background: `${(scrollPosition > 0 || window.location.pathname !== '/') ? "#1b212c" : "rgba(0, 0, 0, 0.01)"}`, opacity: 1, height: '100px', justifyContent: 'space-between',
       padding: '0px 10px', }} position="static">
         <Toolbar >
               <Typography  variant="h6" component="div" sx={{ flexGrow: 1 }}>   

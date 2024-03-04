@@ -5,11 +5,11 @@ import Text from '../components/Text'
 
 export default function BlogPost() {
   return (
-    <div className='content-container flex justify-center items-center '>
+    <div className='content-container flex justify-center items-center bg-prmBG'>
       <div id="1" className='mt-10 lg:w-[900px] flex flex-col blogpost gap-10'>
         <p className='text-[18px] text-[#62728f]'>March 1, 2024</p>
         <HeaderText text="WHY VIRTUAL ASSISTANTS ARE GREAT FOR BUSINESSES"/>
-        <img className='w-[100%]' src='https://images.unsplash.com/photo-1616587226960-4a03badbe8bf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' alt=''/>
+        <img className='w-[100%]' src={require('../assets/BLOG Banner- Essential Digital Tools.png')} alt=''/>
         <h1 className='font-[600] text-secondaryText'>Learn why having a virtual assistant is beneficial for your business.</h1>
         <span className='lg:ml-10 font-[500] tracking-wide leading-7 text-secondaryText'>During the pandemic, the world faced uncertainty, causing chaos in every country. The fear of illness affected everyone. However, amidst this, businesses had to rethink their economic strategies. One emerging role gaining popularity is that of a virtual assistant.
 
@@ -38,7 +38,7 @@ export default function BlogPost() {
       <div id="2" className='mt-10 lg:w-[900px] flex flex-col blogpost gap-10'>
         <p className='text-[18px] text-[#62728f]'>March 1, 2024</p>
         <HeaderText text="Essential Digital Tools for Successful Start-Ups"/>
-        <img className='w-[100%]' src='https://images.unsplash.com/photo-1616587226960-4a03badbe8bf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' alt=''/>
+        <img className='w-[100%]' src={require('../assets/Blog Banner 1.png')} alt=''/>
         <p className='font-[500] tracking-wide leading-7 text-secondaryText'>Are you ready to embark on your digital journey? Starting up online demands courage – the kind that pushes you to connect with people, influence perspectives, overcome challenges, and build a brand that truly reflects you. The road won't be easy, but here's a crucial piece of advice: just as you wouldn't go to war without a gun, don't start your digital business without the right tools. Consider this era of digital entrepreneurship as a battlefield, and to emerge victorious, preparation is key.
         </p>
         <p className='font-[600] text-secondaryText'>

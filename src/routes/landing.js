@@ -12,6 +12,7 @@ import Timeline from '../pages/landing-page/Timeline'
 import Contact from '../pages/landing-page/Contact'
 import Footer from '../layouts/Footer'
 import Background from '../components/Background'
+import AnimateWrapper from './AnimateWrapper'
 export default function LandingPage() {
 
 
@@ -23,34 +24,48 @@ export default function LandingPage() {
         <Top />
       </section>
       <section id='services' className='pt-[5.5rem] lg:pt-20 z-10  bg-prmBG '>
-        <Services /> 
+        <AnimateWrapper>
+          <Services /> 
+        </AnimateWrapper>
       </section>
       <section id='about' className='pt-20  bg-secBG'>
-        <About />
+        <AnimateWrapper>
+          <About />
+        </AnimateWrapper>
       </section>
       <section id='portfolio' className='pt-20 bg-secBG'>
+      <AnimateWrapper>
         <Portfolio />
+        </AnimateWrapper>
       </section>
       {/* <section id='pricing' className='pt-20'>
         <Pricing />
       </section> */}
       <section id='testimonial' className='pt-20 bg-prmBG'>
+      <AnimateWrapper>
         <Testimonial />
+        </AnimateWrapper>
       </section>
       {/* <section id='partners' className='pt-20'>
         <Partners />
       </section> */}
       <section id='blog' className='pt-20  bg-secBG'>
+      <AnimateWrapper>
         <Blog />
+        </AnimateWrapper>
       </section>
       {/* <section id='skills' className='pt-20 bg-[#1b212c]'>
         <Skills />
       </section> */}
       <section id='timeline' className='pt-20 bg-prmBG'>
+      <AnimateWrapper>
         <Timeline />
+        </AnimateWrapper>
       </section>
       <section id='contact' className='pt-20 bg-secBG'>
+      <AnimateWrapper>
         <Contact />
+        </AnimateWrapper>
       </section>
    
       </>

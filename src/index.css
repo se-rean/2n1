@@ -110,6 +110,15 @@ code {
   transition: transform .3s ease-in-out;
   transition-duration: 500ms;
 }
+
+.blog-message {
+  @apply lg:opacity-0 p-2
+}
+.blogpost:hover > .blog-message {  
+  transition: opacity .3s ease-in-out;
+  opacity: 1;
+  transition-duration: 500ms;
+}
  
 
 
@@ -599,3 +608,45 @@ px
 /*
 -- End BackGround Animation 
 */
+
+.custom-shape-divider-bottom-1709398326 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1709398326 svg {
+  position: relative;
+  display: block;
+  width: calc(132% + 1.3px);
+  height: 192px;
+}
+
+.custom-shape-divider-bottom-1709398326 .shape-fill {
+  fill: #929fb4;
+}
+
+.box-animate {    
+  border: 3px solid #0000; 
+  animation: 8s rotate linear infinite;
+}
+
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.blogpost > img:hover > p {
+  bottom: 10;
+}

@@ -5,6 +5,7 @@ import AboutCard from '../../components/AboutCard'
 import PageNumber from '../../components/PageNumber'
 import HeaderText from '../../components/HeaderText'
 import { aboutCardData } from '../../constant/Data'
+import AnimateWrapper from '../../routes/AnimateWrapper'
 export default function About() {
 
   return (
@@ -27,21 +28,23 @@ export default function About() {
           </div> 
         </div>
       </div>
-      <div className='bg-primary pb-[60px] lg:flex lg:justify-center lg:items-center'>
-        <div className='flex flex-col pl-3 lg:pl-0 pr-3 pt-10   lg:w-[900px]'>
-          <p className='pb-[40px] text-[20px] font-[600]  lg:text-[28px] lg:font-[600] lg:leading-[2rem] text-secondaryText'>
-              Let 2in1 be your partner in success, providing te support and expertise your business deserveds.</p> 
-            <div className='lg:flex lg:overflow-auto  lg:w-[150%] lg:pr-5'>
-              {
-                aboutCardData.map(c => (
-                  <div className="h-[18vh] border-white border-l-2 border-opacity-40 w-full lg:w-[300px] bg-card2 hover:bg-card1 hover:cursor-pointer"> 
-                    <AboutCard header={c.header} title={c.title}/>
-                  </div> 
-                ))
-              }
-            </div>
+      <AnimateWrapper>
+        <div className='bg-primary pb-[60px] lg:flex lg:justify-center lg:items-center'>
+          <div className='flex flex-col pl-3 lg:pl-0 pr-3 pt-10   lg:w-[900px]'>
+            <p className='pb-[40px] text-[20px] font-[600]  lg:text-[28px] lg:font-[600] lg:leading-[2rem] text-secondaryText'>
+                Let 2in1 be your partner in success, providing te support and expertise your business deserveds.</p> 
+              <div className='lg:flex lg:overflow-auto  lg:w-[150%] lg:pr-5'>
+                {
+                  aboutCardData.map(c => (
+                    <div className="h-[18vh] w-full lg:w-[300px] bg-card2 hover:bg-card1 hover:cursor-pointer"> 
+                      <AboutCard header={c.header} title={c.title}/>
+                    </div> 
+                  ))
+                }
+              </div>
+          </div>
         </div>
-      </div>
+      </AnimateWrapper>
     </>
   )
 }
