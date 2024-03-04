@@ -1,24 +1,36 @@
 {
   "files": {
-    "main.css": "/static/css/main.8da03d12.css",
-    "main.js": "/static/js/main.bbdb21bd.js",
-    "static/js/453.43d82223.chunk.js": "/static/js/453.43d82223.chunk.js",
-    "static/media/BLOG POST-1.png": "/static/media/BLOG POST-1.31ab33cdb652cd775ec7.png",
-    "static/media/PORTFOLIO-1.png": "/static/media/PORTFOLIO-1.abedff179b11a342895b.png",
-    "static/media/BLOG POST-2.png": "/static/media/BLOG POST-2.55b9ce09b7f781cef0e0.png",
+    "main.css": "/static/css/main.b9c23ba0.css",
+    "main.js": "/static/js/main.c813afec.js",
+    "static/js/453.4c449a7d.chunk.js": "/static/js/453.4c449a7d.chunk.js",
+    "static/media/Blog Banner 1.png": "/static/media/Blog Banner 1.a978f10f019d2deb1265.png",
+    "static/media/BLOG Banner- Essential Digital Tools.png": "/static/media/BLOG Banner- Essential Digital Tools.0ed7a203915e9aff0617.png",
+    "static/media/Blog Banner- SMS Marketing.png": "/static/media/Blog Banner- SMS Marketing.ea0d2b68af10307a9f5c.png",
+    "static/media/_ 2in1- DIGITAL MARKETING (2).png": "/static/media/_ 2in1- DIGITAL MARKETING (2).d3cc4951717eca0463b0.png",
+    "static/media/_ 2in1- DIGITAL MARKETING.png": "/static/media/_ 2in1- DIGITAL MARKETING.4251bacb7cc2c19812b0.png",
+    "static/media/_ 2in1- DIGITAL MARKETING (3).png": "/static/media/_ 2in1- DIGITAL MARKETING (3).bfd02305ce27e8d3e47f.png",
+    "static/media/_ 2in1- DIGITAL MARKETING (5).png": "/static/media/_ 2in1- DIGITAL MARKETING (5).7fa39afa3377a5324188.png",
+    "static/media/_2in1- WEB DEVELOPMENT (5).png": "/static/media/_2in1- WEB DEVELOPMENT (5).72e08777f9e370d1f87b.png",
+    "static/media/_2in1- WEB DEVELOPMENT (3).png": "/static/media/_2in1- WEB DEVELOPMENT (3).43c6483b1a5d17f6723c.png",
+    "static/media/_ 2in1- DIGITAL MARKETING (4).png": "/static/media/_ 2in1- DIGITAL MARKETING (4).9742a5553e1f16c62e86.png",
+    "static/media/BLOG POST -1.png": "/static/media/BLOG POST -1.c7b4455d11a930778fcc.png",
     "static/media/_2in1- WEB DEVELOPMENT.png": "/static/media/_2in1- WEB DEVELOPMENT.88a915a5480aff221dd2.png",
+    "static/media/_2in1- WEB DEVELOPMENT (2).png": "/static/media/_2in1- WEB DEVELOPMENT (2).37f938e507e5dca956c6.png",
+    "static/media/_2in1- WEB DEVELOPMENT (4).png": "/static/media/_2in1- WEB DEVELOPMENT (4).1f4e167fa196e9547c32.png",
     "static/media/_2in1- WEB DEVELOPMENT (1).png": "/static/media/_2in1- WEB DEVELOPMENT (1).9fa39b72481156db26c3.png",
+    "static/media/BLOG POST-2.png": "/static/media/BLOG POST-2.9f41e417757bc7a0e12f.png",
     "static/media/LOGO CREATION.png": "/static/media/LOGO CREATION.7829e0b56624ec599c20.png",
-    "static/media/CLIENT TESTIMONIAL-2.png": "/static/media/CLIENT TESTIMONIAL-2.9a9cba3c7f886c97f235.png",
     "static/media/CLIENT TESTIMONIAL-1.png": "/static/media/CLIENT TESTIMONIAL-1.5bd71032abcedfe48ae3.png",
-    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/_Customer Testimonial Reviews Instagram Post (4).png": "/static/media/_Customer Testimonial Reviews Instagram Post (4).8a5bc90a46d0ceed76a2.png",
+    "static/media/_Customer Testimonial Reviews Instagram Post (2).png": "/static/media/_Customer Testimonial Reviews Instagram Post (2).6c75b21628af927dac15.png",
+    "static/media/_Customer Testimonial Reviews Instagram Post (3).png": "/static/media/_Customer Testimonial Reviews Instagram Post (3).79fb6cc762d5d70d67dd.png",
     "index.html": "/index.html",
-    "main.8da03d12.css.map": "/static/css/main.8da03d12.css.map",
-    "main.bbdb21bd.js.map": "/static/js/main.bbdb21bd.js.map",
-    "453.43d82223.chunk.js.map": "/static/js/453.43d82223.chunk.js.map"
+    "main.b9c23ba0.css.map": "/static/css/main.b9c23ba0.css.map",
+    "main.c813afec.js.map": "/static/js/main.c813afec.js.map",
+    "453.4c449a7d.chunk.js.map": "/static/js/453.4c449a7d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8da03d12.css",
-    "static/js/main.bbdb21bd.js"
+    "static/css/main.b9c23ba0.css",
+    "static/js/main.c813afec.js"
   ]
 }
