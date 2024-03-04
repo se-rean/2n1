@@ -1,7 +1,8 @@
 export const BlogData = [
   { id: "1", title: 'WHY VIRTUAL ASSISTANTS ARE GREAT FOR BUSINESSES', date: 'March 1, 2024', src: require('../assets/Blog Banner 1.png'), desc: 'During the pandemic, the world faced uncertainty, causing chaos in every country. The fear of illness affected everyone. However, amidst this, businesses had to rethink their economic strategies.' },  
   { id: "2", title: 'Essential Digital Tools for Successful Start-Ups', date: 'March 1, 2024', src: require('../assets/BLOG Banner- Essential Digital Tools.png'), desc: 'Are you ready to embark on your digital journey? Starting up online demands courage – the kind that pushes you to connect with people, influence perspectives, overcome challenges, and build a brand that truly reflects you.' },  
-  { id: "3", title: 'Essential Digital Tools for Successful Start-Ups', date: 'March 1, 2024', src: require('../assets/BLOG Banner- Essential Digital Tools.png'), desc: 'Are you ready to embark on your digital journey? Starting up online demands courage – the kind that pushes you to connect with people, influence perspectives, overcome challenges, and build a brand that truly reflects you.' },  
+  { id: "3", title: 'Unlock Growth with SMS Marketing', date: 'March 1, 2024', src: require('../assets/Blog Banner- SMS Marketing.png'), desc: `SMS (Short Message Service) marketing is a strong tool that businesses
+  use to talk to their audience through text messages.` },  
 ]
 export const partnersData = [
   { name: '', src: 'https://images.unsplash.com/photo-1622890806166-111d7f6c7c97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80' },
@@ -27,7 +28,7 @@ export const PortfolioData = [
   { type: 'Virtual Assistance', src: require('../assets/BLOG POST-2.png'), title: 'LOGO CREATION', subTitle: 'asdasd', row: 2 },
   { type: 'Web Development', src: require('../assets/_2in1- WEB DEVELOPMENT (1).png'), title: 'asdasd', subTitle: 'dsad',row: 2 },  
   { type: 'Virtual Assistance', src: require('../assets/LOGO CREATION.png'), title: 'LOGO CREATION', subTitle: 'asdasd', row: 2 },
-  { type: 'Virtual Assistance', src: require('../assets/PORTFOLIO-1.png'), title: 'Content Creation', subTitle: 'asdasd', row: 2 }, 
+  // { type: 'Virtual Assistance', src: require('../assets/PORTFOLIO-1.png'), title: 'Content Creation', subTitle: 'asdasd', row: 2 }, 
   { type: 'Digital Marketing', src: require('../assets/_ 2in1- DIGITAL MARKETING (3).png'), title: 'asdasd', subTitle: 'dsad',row: 2 }, 
   { type: 'Digital Marketing', src: require('../assets/_ 2in1- DIGITAL MARKETING (2).png'), title: 'asdasd', subTitle: 'dsad',row: 2 }, 
   { type: 'Digital Marketing', src: require('../assets/_ 2in1- DIGITAL MARKETING (4).png'), title: 'asdasd', subTitle: 'dsad',row: 2 }, 

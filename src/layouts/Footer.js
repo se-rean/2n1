@@ -12,7 +12,7 @@ function Footer() {
     { title: 'facebook', img: 'https://2in1.com.au/wp-content/uploads/2023/07/NEWCIRCLELOGOwithQR-TR.png' }
   ]
   return (
-    <div className='flex flex-col w-full lg:w-[60%] py-10'><div className='w-full p-20 pt-5 h-auto px-5 justify-between lg:flex-row lg:items-start flex flex-col gap-10'>
+    <div className='flex flex-col w-full lg:w-[60%] py-10 z-50 ]'><div className='w-full p-20 pt-5 h-auto px-5 justify-between lg:flex-row lg:items-start flex flex-col gap-10'>
       <div className='flex gap-1 flex-col'>
         <HeaderText width="100%" text="2in1 done beautifully" />
         <img className='w-40 h-40 ' src="https://2in1.com.au/wp-content/uploads/2023/07/NEWCIRCLELOGOwithQR-TR.png" alt='' />

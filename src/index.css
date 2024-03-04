@@ -433,7 +433,11 @@ px
   @apply text-[16px] font-[600]
 }
 
-
+.number-bullet {
+  list-style-type:decimal;
+  @apply text-[16px] font-[600]
+}
+ 
 .scale-text:hover > p {
   transform: mymove 1s;
 }

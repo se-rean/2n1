@@ -25,7 +25,7 @@ export default function Wrapper({ children }) {
           handleNavLinkClick,
         }}/> 
     {children}
-    <div className='w-full flex lg:justify-center lg:items-center'> 
+    <div className='w-full pt-20 flex lg:justify-center lg:items-center z-50 '> 
       <Footer />
     </div>
     </>

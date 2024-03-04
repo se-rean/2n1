@@ -14,7 +14,7 @@ function Blog() {
         <p className='text-[16px]  text-secondaryText'>
           06
         </p>
-        <p className='pb-[40px] text-[20px] font-[600] '></p>
+        {/* <p className='pb-[40px] text-[20px] font-[600] '></p> */}
         {/* <HeaderText text="Caucibus tortor sed. In tristique ipsum fermentum diam lorem est donec." /> */}
         <AnimateWrapper 
                 variant={{
@@ -27,11 +27,11 @@ function Blog() {
                 }}
                 once={true}
               > 
-        <div className='lg:flex flex-wrap w-full'>
+        <div className='lg:flex flex-wrap w-full lg:w-[1300px]'>
           {
             BlogData.map((c, index) => (
             
-                <div key={index} className='mx-5 flex flex-col justify-center h-[650px] lg:w-[40%] overflow-hidden'>
+                <div key={index} className='mx-2 flex flex-col justify-center h-[650px] lg:w-[30%] overflow-hidden'>
                   <p className='text-[18px] text-[#62728f]'>{c.date}</p>
                   <p onClick={() => navigate(`/blog#${c.id}`)} className='pb-[40px] text-[22px]  text-secondaryText font-[800] cursor-pointer hover:underline hover:underline-offset-2'>{c.title}</p>
                   <div className='cursor-pointer overflow-hidden w-full h-[350px] relative blogpost'>
