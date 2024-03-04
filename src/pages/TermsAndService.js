@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { memo } from 'react'
 import HeaderText from '../components/HeaderText'
 
-export default function TermsAndService() {
+function TermsAndService() {
   return (
-    <div className='content-container flex justify-center items-center bg-secBG pb-10'>
+    <div className='content-container p-10 flex justify-center items-center bg-secBG pb-10'>
       <div id="1" className='mt-10 lg:w-[900px] flex flex-col blogpost gap-10 py-10'>
         <HeaderText line-height="3rem" font-size="50px" text="Terms of Service"/>
         <p> 
@@ -109,3 +109,6 @@ export default function TermsAndService() {
     </div>
   )
 }
+
+
+export default  memo(TermsAndService)

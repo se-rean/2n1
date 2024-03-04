@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import React, { memo, useEffect, useState } from 'react'
 import HeaderText from '../components/HeaderText'
 import { useNavigate } from 'react-router-dom'
 import AnimateWrapper from '../routes/AnimateWrapper'
 
-export default function PortfolioPage() {
+function PortfolioPage() {
   const filterData = {
     "virtual assistance": true, 
     "web development": true, 
@@ -574,3 +574,5 @@ journey of digital success.
     </div>
   )
 }
+
+export default  memo(PortfolioPage)

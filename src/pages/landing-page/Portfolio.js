@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { memo, useEffect, useState } from 'react'
 import Header from '../../components/Header';
 import PageNumber from '../../components/PageNumber';
 import HeaderText from '../../components/HeaderText';
@@ -95,4 +95,4 @@ function Portfolio() {
   )
 }
 
-export default Portfolio
+export default memo(Portfolio)

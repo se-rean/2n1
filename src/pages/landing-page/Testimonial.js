@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { memo, useEffect } from 'react'
 import TestimonialCard from '../../components/TestimonialCard'
 import Header from '../../components/Header';
 import PageNumber from '../../components/PageNumber';
@@ -46,4 +46,4 @@ function Testimonial() {
   )
 }
 
-export default Testimonial
+export default memo(Testimonial)

@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react' 
+import React, { useState, useRef, memo } from 'react' 
 // import nodemailer from 'nodemailer';
 import Header from '../../components/Header'
 import Input from '../../components/Input'
@@ -96,4 +96,4 @@ function Contact() {
   )
 }
 
-export default Contact
+export default memo(Contact)

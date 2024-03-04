@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { memo } from 'react'
 import HeaderText from '../components/HeaderText'
 import {
   Accordion,
@@ -6,9 +6,9 @@ import {
   AccordionBody,
 } from "@material-tailwind/react";
 
-export default function FAQ() {
+ function FAQ() {
 
-  const [open, setOpen] = React.useState(1);
+  const [open, setOpen] = React.useState(0);
  
   const handleOpen = (value) => setOpen(open === value ? 0 : value);
  
@@ -91,3 +91,5 @@ export default function FAQ() {
     </div>
   )
 }
+
+export default memo(FAQ)

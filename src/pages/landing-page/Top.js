@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { memo, useState } from 'react'
 import AboutCard from '../../components/AboutCard'
 import { ArrowRightAlt } from '@mui/icons-material'
 import PulseButton from '../../components/PulseButton'
@@ -67,4 +67,4 @@ function Top() {
   )
 }
 
-export default Top
+export default memo(Top)

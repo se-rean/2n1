@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { memo } from 'react'
 import TitlebarImageList from '../../components/ImageList'
 import Header from '../../components/Header'
 import AboutCard from '../../components/AboutCard'
@@ -6,7 +6,7 @@ import PageNumber from '../../components/PageNumber'
 import HeaderText from '../../components/HeaderText'
 import { aboutCardData } from '../../constant/Data'
 import AnimateWrapper from '../../routes/AnimateWrapper'
-export default function About() {
+function About() {
 
   return (
     <>
@@ -48,3 +48,5 @@ export default function About() {
     </>
   )
 }
+
+export default  memo(About)

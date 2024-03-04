@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { memo } from 'react'
 import Header from '../../components/Header'
 import Card from '../../components/Card'
 import PageNumber from '../../components/PageNumber'
@@ -6,7 +6,7 @@ import HeaderText from '../../components/HeaderText'
 import { useNavigate } from 'react-router-dom/dist'
  import { servicesData } from '../../constant/Data'
 import AnimateWrapper from '../../routes/AnimateWrapper'
-export default function Services() {
+function Services() {
   const navigate = useNavigate();
 
   return (
@@ -43,3 +43,5 @@ export default function Services() {
     </div>
   )
 }
+
+export default memo(Services)

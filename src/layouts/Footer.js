@@ -11,8 +11,13 @@ function Footer() {
     { title: 'instagram', img: require('../assets/social media/instagram.png'), url: 'https://www.instagram.com/2in1.com.au'},
     { title: 'facebook', img: require('../assets/social media/facebook.png'), url: 'https://www.facebook.com/2in1.com.au' },
   ]
+
+  const handleNavigate = (link) => {
+    window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+    navigate(link)
+  }
   return (
-    <div className='flex flex-col w-full lg:w-[60%] py-10 z-50 ]'><div className='w-full p-20 pt-5 h-auto px-5 justify-between lg:flex-row lg:items-start flex flex-col gap-10'>
+    <div className='flex flex-col w-full lg:w-[60%] py-10 '><div className='w-full p-20 pt-5 h-auto px-5 justify-between lg:flex-row lg:items-start flex flex-col gap-10'>
       <div className='flex gap-1 flex-col'>
         <HeaderText width="100%" text="2in1 done beautifully" />
         <img onClick={() => window.location= '/'} className='w-40 h-40 cursor-pointer' src="https://2in1.com.au/wp-content/uploads/2023/07/NEWCIRCLELOGOwithQR-TR.png" alt='' />
@@ -21,7 +26,7 @@ function Footer() {
         <HeaderText text="Sitemap" />
         <div className='lg:flex-row flex-col flex gap-10 lg:gap-20'>
           <div>
-            <FooterLinks text="FAQ's" />
+            <p className='cursor-pointer hover:text-primaryText underline' onClick={() => handleNavigate('/FAQ')}><FooterLinks text="FAQ's" /></p>
             <FooterLinks text="Blog" />
           </div>
           <div>
@@ -33,8 +38,8 @@ function Footer() {
 
       <div className='gap-5 flex flex-col'>
         <div className='flex gap-4 flex-col text-navText'>   
-          <a className='hover:text-primaryText ' href='mailto:vic@2in1.com.au'><Email sx={{ width: '20px' }}/> vic@2in1.com.au</a>
-          <p><Phone sx={{ width: '20px' }}/> <a className='hover:text-primaryText' href='tel:1300 711 000'>1300 711 000</a> | <a className='hover:text-primaryText' href='tel:1300 711 000'>0411 500 700</a></p> 
+          <a className='hover:text-primaryText text-[16px] font-[600] text-navText' href='mailto:vic@2in1.com.au'><Email sx={{ width: '20px' }}/> vic@2in1.com.au</a>
+          <p><Phone sx={{ width: '20px' }}/> <a className='hover:text-primaryText text-[16px] font-[600] text-navText' href='tel:1300 711 000'>1300 711 000</a> | <a className='hover:text-primaryText text-[16px] font-[600] text-navText' href='tel:1300 711 000'>0411 500 700</a></p> 
         </div>
         <div className='w-full flex lg:justify-center lg:items-center gap-5'>
           {links.map((l, index) => (
@@ -51,7 +56,7 @@ function Footer() {
     </div> 
     <div className='px-5 w-full flex justify-between flex-col lg:flex-row'>
       <p className='text-navText text-[12px]'>{`©${new Date(Date.now()).getFullYear()} 2in1 Promotions & VA Solutions | All Rights Reserved`}</p>
-        <p onClick={() =>window.location= '/terms-of-service'} className='underline-offset-1 underline text-navText text-[12px] cursor-pointer hover:text-primaryText'>Terms of Service | Privacy Policy</p>
+        <p onClick={() =>handleNavigate('/terms-of-service')} className='underline-offset-1 underline text-navText text-[12px] cursor-pointer hover:text-primaryText'>Terms of Service | Privacy Policy</p>
         <p className='text-navText text-[12px]'>Designed in-house with love</p>
       </div>
      </div>

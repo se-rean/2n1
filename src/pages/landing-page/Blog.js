@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { memo } from 'react'
 import HoverButton from '../../components/HoverButton'
 import Header from '../../components/Header'
 import HeaderText from '../../components/HeaderText'
@@ -52,4 +52,4 @@ function Blog() {
   )
 }
 
-export default Blog
+export default memo(Blog)

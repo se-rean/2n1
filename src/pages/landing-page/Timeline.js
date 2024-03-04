@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { memo } from 'react'
 import Header from '../../components/Header'
 import Timelines from '../../components/Timelines'
 import HeaderText from '../../components/HeaderText'
@@ -25,4 +25,4 @@ function Timeline() {
   )
 }
 
-export default Timeline
+export default memo(Timeline)

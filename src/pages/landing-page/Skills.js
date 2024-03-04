@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { memo, useEffect } from 'react'
 import Header from '../../components/Header'
 import ProgressBar from '../../components/ProgressBar'
 import PageNumber from '../../components/PageNumber'
@@ -45,4 +45,4 @@ function Skills() {
   )
 }
 
-export default Skills
+export default memo(Skills)

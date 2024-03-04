@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { memo } from 'react'
 
-export default function PageNotFound() {
+function PageNotFound() {
   return (
     <div className='content-container flex justify-center items-center w-full h-[80vh] bg-[#1b212c] '>
       <h1 className='text-[24px] font-[700] tracking-wide '>404 Page Not Found!</h1>
     </div>
   )
 }
+
+export default  memo(PageNotFound)

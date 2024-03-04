@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { memo } from 'react'
 import HoverButton from '../../components/HoverButton'
 import Header from '../../components/Header'
 import PageNumber from '../../components/PageNumber'
@@ -62,4 +62,4 @@ function Pricing() {
   )
 }
 
-export default Pricing
+export default memo(Pricing)
