@@ -17,7 +17,7 @@ export default function Wrapper({ children }) {
   };
 
   return (
-    <>  
+    <>   
     <NavBar  {...{
           handleToggleDrawer,
           drawerOpen,
@@ -27,7 +27,7 @@ export default function Wrapper({ children }) {
     {children}
     <div className='w-full pt-20 flex lg:justify-center lg:items-center z-50 '> 
       <Footer />
-    </div>
+    </div> 
     </>
   )
 }
