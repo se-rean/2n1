@@ -16,23 +16,27 @@ function Blog() {
   return (
     <div className='content-container'>
       <Header text="BLOG"/>
-      <div className='pt-10 pb-10 lg:w-[900px] gap-5 flex flex-col'>
+      <div className='pt-10 pb-10 lg:w-[1000px] gap-5 flex flex-col'>
         <p className='text-[16px]  text-secondaryText'>
           06
         </p>
         {/* <p className='pb-[40px] text-[20px] font-[600] '></p> */}
         {/* <HeaderText text="Caucibus tortor sed. In tristique ipsum fermentum diam lorem est donec." /> */}
         
-        <div className='lg:flex flex-wrap w-full lg:w-[1300px]'>
+        <div className='flex flex-col w-full  gap-10'>
           {
             BlogData.map((c, index) => ( 
-                <div key={index} className='mx-2 flex flex-col justify-center h-[650px] lg:w-[30%] overflow-hidden'>
-                  <p className='text-[18px] text-[#62728f]'>{c.date}</p>
-                  <p onClick={() => navigate(`/blog#${c.id}`)} className='pb-[40px] text-[22px]  text-secondaryText font-[800] cursor-pointer hover:underline hover:underline-offset-2'>{c.title}</p>
-                  <div className='shadow-md shadow-cyan-500/50 rounded-lg cursor-pointer overflow-hidden w-full h-[350px] relative blogpost'>
-                    <p className='mt-10 text-ellipsis  text-[14px] text-secondaryText absolute z-10 bottom-0 bg-primary blog-message'>{c.desc}</p> 
-                    <img loading='lazy' onClick={() => navigate(`/blog#${c.id}`)} className='hover-images w-full h-full' src={c.src} alt=''/> 
-                  </div>  
+                <div key={index} className='flex flex-col justify-center md:h-[480px] h-full lg:w-[100%] overflow-hidden'>
+                  <p className='text-[18px] text-[#62728f]'>{c.date}</p> 
+                  <div className='flex gap-7 flex-col  md:flex-row'>
+                    <div className='flex flex-col gap-5  md:w-[50%]'>
+                      <p onClick={() => navigate(`/blog#${c.id}`)} className=' text-[22px]  text-secondaryText font-[800] cursor-pointer hover:underline hover:underline-offset-2'>{c.title}</p>
+                      <p className='text-[16px] text-center lg:text-left lg:text-[100%] lg:w-full text-secondaryText'>{c.desc}</p> 
+                    </div>
+                    <div className='shadow-md shadow-cyan-500/50 rounded-lg cursor-pointer overflow-hidden w-full h-full relative '> 
+                      <img onClick={() => navigate(`/blog#${c.id}`)} className='hover-images w-full h-full object-fit' src={c.src} alt=''/> 
+                    </div>  
+                  </div>
                 </div>  
             ))
           }

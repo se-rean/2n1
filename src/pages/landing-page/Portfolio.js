@@ -59,18 +59,15 @@ function Portfolio() {
             <div class=" gap-4   h-[70%] portfolio">
               {/* <Swipper> */}
              {
-               filteredContent.map((c, index) => ( 
-                  
-
-                      <div className={`relative portfolio-container mt-2 cursor-pointer overflow-hidden  h-full w-full animate__animated  animate__fadeInLeft `}> 
-                        <img className='shadow-md shadow-cyan-500/50 rounded-lg w-full h-[100%] object-fill opacity-[70%] ' src={c.src} alt='' /> 
+               filteredContent.map((c, index) => (
+                      <div className={`relative portfolio-container mt-2 cursor-pointer overflow-hidden  h-full w-full animate__animated  animate__fadeInLeft  shadow-cyan-500/50 rounded-lg`}> 
+                        <img className='shadow-md  w-full h-[100%] object-fill opacity-[70%]  hover-images' src={c.src} alt='' /> 
                         {/* <div
                           className='flex flex-col absolute h-[7rem] bg-primary bottom-0 w-[30vh] py-4 justify-start lg:justify-center px-5 text-start portfolio-content'>
                           <p className='text-[22px] w-full font-[700] text-primaryText'>{c.title}</p>
                           <p className='mt-[-10px]'>{c.subTitle}</p>
                         </div> */}
                       </div>  
-                 
                ))
              } 
              {/* </Swipper>  */}

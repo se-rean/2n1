@@ -26,7 +26,7 @@ function Testimonial() {
               {/* <Swipper items={3} > */}
                 {
                   testimonialData.map((t, index) => (
-                    <div key={index} className='rounded-lg shadow-md shadow-cyan-500/50 snap-start   lg:row-span-1 lg:w-[40%]'>
+                    <div key={index} className='rounded-lg shadow-md shadow-cyan-500/50 snap-start   lg:row-span-1 lg:w-[30%]  hover-images'>
                       {/* <TestimonialCard 
                       className="snap-start"
                       name={t.name} 
@@ -34,7 +34,7 @@ function Testimonial() {
                       position={t.position}
                       img={t.src}
                       /> */}
-                      <img alt='' className='rounded-lg brightness-70 hover:brightness-100 object-fill top-0 h-full w-full opacity-[70%] ' src={t.src}/>
+                      <img alt='' className='rounded-lg brightness-70 hover:brightness-100 object-fill top-0 h-full w-full opacity-[70%]' src={t.src}/>
                     </div> 
                   ))
                 }

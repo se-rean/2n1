@@ -21,7 +21,7 @@ function Footer() {
     <div className='flex flex-col w-full lg:w-[60%] py-10 '>
       <div className='w-full p-20 pt-5 h-auto px-5 justify-between lg:flex-row lg:items-start flex flex-col gap-10'>
         <div className='flex gap-2 flex-col lg:w-[30%] '>
-          <HeaderText width="100%" text="2in1 done beautifully" />
+          <HeaderText width="100%" font-size="25px" text={`Help us find your "2in1"`} />
           <div className='flex flex-col gap-4 items-center  lg:flex-row'>
             <img onClick={() => window.location= '/'} className='w-[5rem] h-[5rem] cursor-pointer' src={logo} alt='' />
             <a href=' https://tamtechhub.com' target="_blank"  rel="noreferrer"><img className='w-[13rem] h-15 cursor-pointer' src={require('../assets/social media/image_2024_03_07T02_07_43_977Z.png')} alt='' /> </a>
@@ -29,7 +29,7 @@ function Footer() {
           <p className='text-navText text-[14px]'>An outsourcing company with a passionate team of do-ers and top-notch resources to help your business thrive</p>
         </div>
         <div>
-          <HeaderText text="Sitemap" />
+          <HeaderText font-size="25px" text="Sitemap" />
           <div className='lg:flex-row flex-col flex gap-10 lg:gap-20'>
             <div>
               <p className='cursor-pointer hover:text-primaryText underline' onClick={() => handleNavigate('/FAQ')}><FooterLinks text="FAQ's" /></p>
@@ -50,19 +50,24 @@ function Footer() {
           <div className='w-full flex lg:justify-center lg:items-center gap-5'>
             {links.map((l, index) => (
               <a href={l.url} key={index} target="_blank" className='w-[2em] h-[2em]' rel="noreferrer">
-                <img key={index} className='w-full h-full' src={l.img} alt='' />
+                <img key={index} className='w-full h-full' src={l.img} alt={l.title} />
               </a>
             ))}
           </div>
           <div className='w-full flex-col lg:flex-row flex lg:justify-center lg:items-start gap-5'>
             <div>
-              <p className='text-primaryText text-[14px]'>Australia HQ</p>
+              <p className='text-primaryText text-[14px] font-bold'>Australia HQ</p>
+              <a href='https://2in1.com.au/' target="_blank"  rel="noreferrer">
+                <p className='text-primaryText text-[14px] cursor-pointer hover:underline'>2in1 Promotions 
+                  <br></br>
+                & VA Solutions </p>
+              </a>
               <p className='text-navText text-[14px]'>20 Pienza Road</p>
               <p className='text-navText text-[14px]'>Fraser Rise</p>
               <p className='text-navText text-[14px]'>Victoria 3170</p>
             </div>
             <div> 
-              <p className='text-primaryText text-[14px]'>Philippines HQ</p> 
+              <p className='text-primaryText text-[14px] font-bold'>Philippines HQ</p> 
               <a href=' https://tamtechhub.com' target="_blank"  rel="noreferrer"><p className='text-primaryText text-[14px] cursor-pointer hover:underline'>Tamaraw Technohub</p></a>
               <p className='text-navText text-[14px]'>5th flr Megalife Building,</p>
               <p className='text-navText text-[14px]'>Juan Luna, San Vicente, </p>
@@ -72,7 +77,7 @@ function Footer() {
         </div>
       </div> 
       <div className='px-5 w-full flex justify-between flex-col lg:flex-row'>
-        <p className='text-navText text-[12px]'>{`©${new Date(Date.now()).getFullYear()} 2in1 Promotions & VA Solutions | All Rights Reserved`}</p>
+        <p className='text-navText text-[12px]'>{`©${new Date(Date.now()).getFullYear()}`} <span className='font-bold text-primaryText'>2in1 Promotions & VA Solutions</span> | All Rights Reserved</p>
           <p onClick={() =>handleNavigate('/terms-of-service')} className='underline-offset-1 underline text-navText text-[12px] cursor-pointer hover:text-primaryText'>Terms of Service | Privacy Policy</p>
           <p className='text-navText text-[12px]'>Designed in-house with love</p>
       </div>
