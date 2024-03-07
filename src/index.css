@@ -194,7 +194,7 @@ code {
   height:80%;
   background-color: #1d3152;
   z-index: 1;
-  opacity: .7;
+  opacity: .6;
 }
 
 @media (max-width: 1250px) {
