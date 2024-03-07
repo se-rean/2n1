@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.d609d02a.css",
-    "main.js": "/static/js/main.a44ffc84.js",
+    "main.js": "/static/js/main.b636a73c.js",
     "static/js/453.4c449a7d.chunk.js": "/static/js/453.4c449a7d.chunk.js",
     "static/media/Blog Banner 1.png": "/static/media/Blog Banner 1.a978f10f019d2deb1265.png",
     "static/media/BLOG Banner- Essential Digital Tools.png": "/static/media/BLOG Banner- Essential Digital Tools.0ed7a203915e9aff0617.png",
@@ -31,13 +31,14 @@
     "static/media/_Customer Testimonial Reviews Instagram Post (4).png": "/static/media/_Customer Testimonial Reviews Instagram Post (4).8a5bc90a46d0ceed76a2.png",
     "static/media/_Customer Testimonial Reviews Instagram Post (2).png": "/static/media/_Customer Testimonial Reviews Instagram Post (2).6c75b21628af927dac15.png",
     "static/media/_Customer Testimonial Reviews Instagram Post (3).png": "/static/media/_Customer Testimonial Reviews Instagram Post (3).79fb6cc762d5d70d67dd.png",
+    "static/media/logo.png": "/static/media/logo.1d5883434a85275f8b36.png",
     "index.html": "/index.html",
     "main.d609d02a.css.map": "/static/css/main.d609d02a.css.map",
-    "main.a44ffc84.js.map": "/static/js/main.a44ffc84.js.map",
+    "main.b636a73c.js.map": "/static/js/main.b636a73c.js.map",
     "453.4c449a7d.chunk.js.map": "/static/js/453.4c449a7d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d609d02a.css",
-    "static/js/main.a44ffc84.js"
+    "static/js/main.b636a73c.js"
   ]
 }

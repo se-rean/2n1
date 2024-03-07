@@ -62,20 +62,8 @@ function Portfolio() {
                filteredContent.map((c, index) => ( 
                   
 
-                      <div className={`relative portfolio-container mt-2 cursor-pointer overflow-hidden  h-full w-full animate__animated  animate__fadeInLeft `}>
-                        <AnimateWrapper
-                    variant={{
-                      hidden: { opacity:0, x:-100 },
-                      visible: { opacity:1, x:0 }
-                    }}
-                    transition={{ 
-                      duration: 0.5,
-                      delay: index/2
-                    }}
-                    once={true}
-                  >
-                        <img className='shadow-md shadow-cyan-500/50 rounded-lg w-full h-[100%] object-fill opacity-[70%] ' src={c.src} alt='' />
-                        </AnimateWrapper>
+                      <div className={`relative portfolio-container mt-2 cursor-pointer overflow-hidden  h-full w-full animate__animated  animate__fadeInLeft `}> 
+                        <img className='shadow-md shadow-cyan-500/50 rounded-lg w-full h-[100%] object-fill opacity-[70%] ' src={c.src} alt='' /> 
                         {/* <div
                           className='flex flex-col absolute h-[7rem] bg-primary bottom-0 w-[30vh] py-4 justify-start lg:justify-center px-5 text-start portfolio-content'>
                           <p className='text-[22px] w-full font-[700] text-primaryText'>{c.title}</p>

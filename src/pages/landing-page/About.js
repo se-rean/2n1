@@ -32,7 +32,7 @@ function About() {
         <div className='bg-primary pb-[60px] lg:flex lg:justify-center lg:items-center'>
           <div className='flex flex-col pl-3 lg:pl-0 pr-3 pt-10   lg:w-[900px]'>
             <p className='pb-[40px] text-[20px] font-[600]  lg:text-[28px] lg:font-[600] lg:leading-[2rem] text-secondaryText'>
-                Let 2in1 be your partner in success, providing te support and expertise your business deserveds.</p> 
+                Let 2in1 be your partner in success, providing the support and expertise your business deserves.</p> 
               <div className='lg:flex lg:overflow-auto  lg:w-[150%] lg:pr-5'>
                 {
                   aboutCardData.map(c => (

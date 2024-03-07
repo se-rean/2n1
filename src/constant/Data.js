@@ -22,6 +22,8 @@ export const partnersData = [
   { name: '', src: 'https://images.unsplash.com/photo-1622890806166-111d7f6c7c97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80' },
 ]
 
+export const logo = require('../assets/logo.png')
+
 export const PortfolioData = [
   { type: 'Virtual Assistance', src: require('../assets/BLOG POST -1.png'), title: 'BLOG POST', subTitle: 'asdasd', row:2},
   { type: 'Virtual Assistance', src: require('../assets/BLOG POST-2.png'), title: 'LOGO CREATION', subTitle: 'asdasd', row: 2 }, 

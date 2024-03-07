@@ -43,8 +43,8 @@ function Top() {
         </h1>
 
         </div>
-        <div  onClick={() => setModal(true)}  className='ml-[2rem] mt-[70px] lg:ml-0 lg:mt-0 cursor-pointer'>
-          <PulseButton />
+        <div  className='ml-[2rem] mt-[70px] lg:ml-0 lg:mt-0 cursor-pointer'>
+          {/* <PulseButton /> */}
         </div> 
       </div>
       <div 

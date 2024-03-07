@@ -13,7 +13,7 @@ import { Menu as MenuIcon, Close, Phone, Email} from '@mui/icons-material/';
 import nav from '../nav-items';
 import ThemeControll from '../../components/ThemeControll';
 import FloatButton from '../../components/FloatButton';
-
+import { logo } from '../../constant/Data';
 const variants = {
   open: { opacity: 1, x: 0 },
   closed: { opacity: 0, x: "-100%" },
@@ -130,7 +130,7 @@ const isDesktop = useResponsive('up', 'xl');
       padding: '0px 10px', }} position="static">
         <Toolbar >
               <Typography  variant="h6" component="div" sx={{ flexGrow: 1 }}>   
-                <img onClick={() => window.location = '/'} hidden={!isDesktop && drawerOpen } className="w-[100px] fixed top-5 xl:top-10 lg:left-[12rem] cursor-pointer" alt='' src='https://2in1.com.au/wp-content/uploads/2023/07/NEWCIRCLELOGOwithQR-TR.png'/> 
+                <img onClick={() => window.location = '/'} hidden={!isDesktop && drawerOpen } className="w-[100px] fixed top-5 xl:top-10 lg:left-[12rem] cursor-pointer" alt='' src={logo}/> 
               </Typography> 
                 { !isDesktop && <IconButton
                   onClick={() => handleToggleDrawer()}

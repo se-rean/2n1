@@ -49,10 +49,8 @@ export default function LandingPage() {
       {/* <section id='partners' className='pt-20'>
         <Partners />
       </section> */}
-      <section id='blog' className='pt-20  bg-secBG'>
-      <AnimateWrapper>
-        <Blog />
-        </AnimateWrapper>
+      <section id='blog' className='pt-20  bg-secBG'> 
+       <Blog />  
       </section>
       {/* <section id='skills' className='pt-20 bg-[#1b212c]'>
         <Skills />

@@ -4,7 +4,7 @@ import HeaderText from '../components/HeaderText'
 import FooterLinks from '../components/FooterLinks'
 import { Email, Phone } from '@mui/icons-material'
 import { useNavigate } from 'react-router-dom'
-
+import { logo } from '../constant/Data'
 function Footer() {
   const navigate = useNavigate()
   const links = [
@@ -20,7 +20,7 @@ function Footer() {
     <div className='flex flex-col w-full lg:w-[60%] py-10 '><div className='w-full p-20 pt-5 h-auto px-5 justify-between lg:flex-row lg:items-start flex flex-col gap-10'>
       <div className='flex gap-1 flex-col'>
         <HeaderText width="100%" text="2in1 done beautifully" />
-        <img onClick={() => window.location= '/'} className='w-40 h-40 cursor-pointer' src="https://2in1.com.au/wp-content/uploads/2023/07/NEWCIRCLELOGOwithQR-TR.png" alt='' />
+        <img onClick={() => window.location= '/'} className='w-40 h-40 cursor-pointer' src={logo} alt='' />
       </div>
       <div>
         <HeaderText text="Sitemap" />
