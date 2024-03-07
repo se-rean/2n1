@@ -12,6 +12,33 @@ body {
   font-weight: 400;
   padding: 0;
   box-shadow: none !important; 
+  /* overflow: hidden; */
+  scroll-snap-type: y mandatory; 
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+.child {      
+  scroll-snap-align: center;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
 }
 
 code {
@@ -443,13 +470,12 @@ px
 }
  
 .scale-text:hover > p {
-  transform: mymove 1s;
+  animation: mymove 2s;
 }
 
 @keyframes mymove {
-  50% {font-size: 20px;}
+  50% {font-size: 30px;}
 }
-
 
 /*Start Animations*/
 @-webkit-keyframes animatetop {

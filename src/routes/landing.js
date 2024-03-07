@@ -20,20 +20,20 @@ export default function LandingPage() {
   return (
     <> 
      
-      <section id='top' className=''>
+      <section id='top' className='child'>
         <Top />
       </section>
-      <section id='services' className='pt-[5.5rem] lg:pt-20 z-10  bg-prmBG '>
+      <section id='services' className='child pt-[5.5rem] lg:pt-20 z-10  bg-prmBG '>
         <AnimateWrapper>
           <Services /> 
         </AnimateWrapper>
       </section>
-      <section id='about' className='pt-20  bg-secBG'>
+      <section id='about' className='child pt-20  bg-secBG'>
         <AnimateWrapper>
           <About />
         </AnimateWrapper>
       </section>
-      <section id='portfolio' className='pt-20 bg-secBG'>
+      <section id='portfolio' className='child pt-20 bg-secBG'>
       <AnimateWrapper>
         <Portfolio />
         </AnimateWrapper>
@@ -41,7 +41,7 @@ export default function LandingPage() {
       {/* <section id='pricing' className='pt-20'>
         <Pricing />
       </section> */}
-      <section id='testimonial' className='pt-20 bg-prmBG'>
+      <section id='testimonial' className='pt-20 bg-prmBG child'>
       <AnimateWrapper>
         <Testimonial />
         </AnimateWrapper>
@@ -49,18 +49,18 @@ export default function LandingPage() {
       {/* <section id='partners' className='pt-20'>
         <Partners />
       </section> */}
-      <section id='blog' className='pt-20  bg-secBG'> 
+      <section id='blog' className='pt-20  bg-secBG child'> 
        <Blog />  
       </section>
       {/* <section id='skills' className='pt-20 bg-[#1b212c]'>
         <Skills />
       </section> */}
-      <section id='timeline' className='pt-20 bg-prmBG'>
+      <section id='timeline' className='pt-20 bg-prmBG child'>
       <AnimateWrapper>
         <Timeline />
         </AnimateWrapper>
       </section>
-      <section id='contact' className='pt-20 bg-secBG'>
+      <section id='contact' className='pt-20 bg-secBG child'>
       <AnimateWrapper>
         <Contact />
         </AnimateWrapper>

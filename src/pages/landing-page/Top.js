@@ -56,10 +56,20 @@ function Top() {
             </div>
           </div>
         </div> 
-        <div className='h-[150px] lg:h-[17vh] w-full  bg-card2  cursor-pointer animate_animated animate__backInRight'>
+        <div onClick={() => {
+          const targetElement = document.querySelector("#contact");
+          if (targetElement) {
+            targetElement.scrollIntoView({ behavior: 'smooth' });
+          }
+        }} className='h-[150px] lg:h-[17vh] w-full  bg-card2  cursor-pointer animate_animated animate__backInRight'>
           <AboutCard icon={<ArrowRightAlt />} title="We can help" header2="Have a project?" />
         </div> 
-        <div className='h-[150px] lg:h-[17vh] w-full bg-card1 cursor-pointer'>
+        <div onClick={() => {
+          const targetElement = document.querySelector("#contact");
+          if (targetElement) {
+            targetElement.scrollIntoView({ behavior: 'smooth' });
+          }
+        }} className='h-[150px] lg:h-[17vh] w-full bg-card1 cursor-pointer'>
           <AboutCard icon={<ArrowRightAlt />} title="Join our team" header2="We are hiring" />
         </div> 
       </div>
