@@ -14,6 +14,7 @@ import PortfolioPage from '../pages/PortfolioPage'
 import PageNotFound from '../pages/PageNotFound'
 import TermsAndService from '../pages/TermsAndService'
 import FAQ from '../pages/FAQ'
+import CareerPage from '../pages/CareerPage'
 
 const AppRoute = () => {
   const RouteLinks = [
@@ -23,6 +24,7 @@ const AppRoute = () => {
     { path: '/portfolio', page: <PortfolioPage /> },
     { path: '/terms-of-service', page: <TermsAndService /> },
     { path: '/FAQ', page: <FAQ /> },
+    { path: '/Careers', page: <CareerPage /> },
     { path: '/', page: <LandingPage /> }
   ]
 

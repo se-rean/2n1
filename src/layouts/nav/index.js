@@ -44,7 +44,7 @@ function RenderContent({type, handleToggleDrawer, handleNavLinkClick}) {
 
   const handleRedirect = (id, link) => { 
     // console.log(window.location)
-    if(window.location.pathname === `/`) {
+    if(window.location.pathname === `/` && window.location.hash !== "") {
       window.location.hash = ""
       handleFocus(id, link)
     } else {
@@ -74,7 +74,7 @@ function RenderContent({type, handleToggleDrawer, handleNavLinkClick}) {
               </li>
             </a> 
           ))
-      }  
+      }
     </ul>
   )
 }
