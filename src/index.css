@@ -684,3 +684,25 @@ px
 .blogpost > img:hover > p {
   bottom: 10;
 }
+
+.blog-scroll { 
+  overflow-x: hidden;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+.blog-scroll::-webkit-scrollbar {
+   width: 3px;
+   height: 5px;
+}
+
+.blog-scroll::-webkit-scrollbar-track {
+   -webkit-box-shadow: inset 0 0 6px rgba(15, 11, 11, 0.3); 
+   background-color: #10141b;
+   width: 3px;
+   border-radius: 10px;
+}
+
+.blog-scroll::-webkit-scrollbar-thumb {
+   border-radius: 10px;
+   -webkit-box-shadow: inset 0 0 6px rgba(20, 17, 17, 0.5); 
+}
