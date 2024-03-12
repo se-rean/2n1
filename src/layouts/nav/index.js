@@ -37,7 +37,7 @@ function RenderContent({type, handleToggleDrawer, handleNavLinkClick}) {
 
   const [focus, setFocus] = useState()
   function handleFocus(key, id) {
-    setFocus(key)
+    if (key !== 0) setFocus(key) 
     handleToggleDrawer()
     handleNavLinkClick(id) 
   }
@@ -50,6 +50,7 @@ function RenderContent({type, handleToggleDrawer, handleNavLinkClick}) {
     } else {
       // console.log(link)
       // window.location.hash = `${link}` 
+      setFocus(id)
       navigate(`/${link}`)
     }
   }
@@ -57,7 +58,7 @@ function RenderContent({type, handleToggleDrawer, handleNavLinkClick}) {
   useEffect(() => {
     if (window.location.hash) {
       setTimeout(() => {
-        handleFocus(0, window.location.hash)
+        handleFocus(0,window.location.hash) 
         window.history.replaceState("", document.title, window.location.pathname);
       }, 1000)
     }
@@ -114,7 +115,7 @@ const isDesktop = useResponsive('up', 'xl');
     }}>
         {
             isDesktop && (
-              <div className='w-[100%] h-[30px]  absolute left-0 z-30 flex justify-around items-center text-sm  text-navText'>
+              <div className='w-[100%] h-[30px] bg-card2  absolute left-0 z-30 flex text-tertiaryText justify-around items-center text-sm font-[600]'>
                 <p className=''>Need help or need a hand? We got a VA for that!</p>
                 <div className='flex gap-4 '>  
                   <a className='hover:text-primaryText ' href='mailto:vic@2in1.com.au'><Email sx={{ width: '20px' }}/> vic@2in1.com.au</a>

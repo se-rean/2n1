@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import HeaderText from '../components/HeaderText'
 import {
   Accordion,
@@ -9,9 +9,12 @@ import HoverButton from '../components/HoverButton'
 
 function CareerPage() {
  
-  const [open, setOpen] = React.useState(0);
+  const [open, setOpen] = useState(0);
  
-  const handleOpen = (value) => setOpen(open === value ? 0 : value);
+  const handleOpen = (value) => { 
+    setOpen(open === value ? 0 : value);
+  }
+
   function Icon({ id, open }) {
     return (
       <svg
@@ -27,6 +30,9 @@ function CareerPage() {
     );
   }
 
+  useEffect(() => {
+    window.scrollTo({top: 0, behavior: 'smooth'})
+  }, [])
   return (
     <div className='content-container flex justify-center items-center bg-secBG pb-10'>
       <div className='w-[100%] flex justify-center items-center flex-col gap-5 pt-[10rem]'>
@@ -86,9 +92,13 @@ function CareerPage() {
                 <span  className={` ${open === 1 ? 'text-primaryText' : 'text-secondaryText'} hover:text-primaryText`}>VIRTUAL ASSISTANTS</span>
               </AccordionHeader>
               <AccordionBody>
-                <div className='w-full flex flex-col p-5'>
-                  <p className='text-[16px] font-[600] tracking-wide leading-7 text-secondaryText md:w-[90%]'>Unlock your potential as a Virtual Assistant with us! Are you ready to thrive in a dynamic work environment, managing tasks with efficiency and precision? Join our team and embark on a journey where your skills meet exciting opportunities. Ready to take the first step?
+                <div  id='1'  className='w-full flex flex-col p-5'>
+                <div className='flex flex-col md:flex-row gap-5'>
+                  <img className='w-full md:w-[50%] h-[20rem] object-fit' src={require('../assets/career/Career page- Virtual Assistant.png')} alt=''/>
+                  <p className='text-[16px] font-[600] tracking-wide leading-7 text-secondaryText md:w-[40%] h-full'>Unlock your potential as a Virtual Assistant with us! Are you ready to thrive in a dynamic work environment, managing tasks with efficiency and precision? Join our team and embark on a journey where your skills meet exciting opportunities. Ready to take the first step?
                   </p> 
+                </div>
+                 
                 <p className='pt-5 text-[16px] font-[600] tracking-wide leading-7 text-secondaryText'>Qualifications for Virtual Assistant Position:</p>
                 <ul className='px-10 flex flex-col gap-5 list-disc'>
                   <li className='tracking-wide text-[14px] text-start text-pretty text-secondaryText font-[600] '>
@@ -140,9 +150,13 @@ function CareerPage() {
                 <span  className={` ${open === 2 ? 'text-primaryText' : 'text-secondaryText'} hover:text-primaryText`}>WEB DEVELOPER</span>
               </AccordionHeader>
               <AccordionBody>
-              <div className='w-full flex flex-col p-5'>
-                  <p className='text-[16px] font-[600] tracking-wide leading-7 text-secondaryText md:w-[90%]'>Are you a skilled Web Developer ready to make a big impact? Join our team and bring your creative expertise to life! We're on the lookout for passionate individuals like you to contribute to innovative web solutions. Ready to take your coding talents to the next level? 
+              <div  id='2' className='w-full flex flex-col p-5'>
+                <div className='flex flex-col md:flex-row gap-5'>
+                  <img className='w-full md:w-[50%] h-[20rem] object-fit' src={require('../assets/career/Career page- Web Developer.png')} alt=''/>
+                  <p className='text-[16px] font-[600] tracking-wide leading-7 text-secondaryText md:w-[30%]'>Are you a skilled Web Developer ready to make a big impact? Join our team and bring your creative expertise to life! We're on the lookout for passionate individuals like you to contribute to innovative web solutions. Ready to take your coding talents to the next level? 
                   </p> 
+                </div>
+                  
                 <p className='pt-5 text-[16px] font-[600] tracking-wide leading-7 text-secondaryText'>Qualifications for Web Developer Position:</p>
                 <ul className='px-10 flex flex-col gap-5 list-disc'>
                   <li className='tracking-wide text-[14px] text-start text-pretty text-secondaryText font-[600] '>
@@ -195,9 +209,13 @@ function CareerPage() {
                 <span className={` ${open === 3 ? 'text-primaryText' : 'text-secondaryText'} hover:text-primaryText`}>DIGITAL MARKETING SPECIALIST</span>
               </AccordionHeader>
               <AccordionBody>
-              <div className='w-full flex flex-col p-5'>
-                  <p className='text-[16px] font-[600] tracking-wide leading-7 text-secondaryText md:w-[90%]'>Ready to make waves in the digital world? Join us as a Digital Marketing Specialist and take the lead in creating impactful online campaigns! Do you have the skills to elevate our brand presence and drive results in the ever-evolving digital landscape?
-                  </p> 
+              <div  id='3' className='w-full flex flex-col p-5'>
+                  
+                  <div className='flex flex-col md:flex-row gap-5'>
+                    <img className='w-full md:w-[50%] h-[20rem] object-fit' src={require('../assets/career/Career page- Digital Marketing Specialist.png')} alt=''/>
+                    <p className='text-[16px] font-[600] tracking-wide leading-7 text-secondaryText md:w-[30%]'>Ready to make waves in the digital world? Join us as a Digital Marketing Specialist and take the lead in creating impactful online campaigns! Do you have the skills to elevate our brand presence and drive results in the ever-evolving digital landscape?
+                    </p> 
+                  </div>
                 <p className='pt-5 text-[16px] font-[600] tracking-wide leading-7 text-secondaryText'>Qualifications for Digital Marketing Specialist Position:</p>
                 <ul className='px-10 flex flex-col gap-5 list-disc'>
                   <li className='tracking-wide text-[14px] text-start text-pretty text-secondaryText font-[600] '>

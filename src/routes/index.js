@@ -15,6 +15,7 @@ import PageNotFound from '../pages/PageNotFound'
 import TermsAndService from '../pages/TermsAndService'
 import FAQ from '../pages/FAQ'
 import CareerPage from '../pages/CareerPage'
+import PartnerPage from '../pages/PartnerPage'
 
 const AppRoute = () => {
   const RouteLinks = [
@@ -25,6 +26,7 @@ const AppRoute = () => {
     { path: '/terms-of-service', page: <TermsAndService /> },
     { path: '/FAQ', page: <FAQ /> },
     { path: '/Careers', page: <CareerPage /> },
+    { path: '/partners', page: <PartnerPage /> },
     { path: '/', page: <LandingPage /> }
   ]
 

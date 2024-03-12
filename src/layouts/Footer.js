@@ -36,12 +36,11 @@ function Footer() {
               <p className='cursor-pointer hover:text-primaryText underline' onClick={() => handleNavigate('/blog')}><FooterLinks text="Blog" /></p>
             </div>
             <div>
-              <FooterLinks text="About Us" /> 
-              <FooterLinks text="Referral Partners" />
+            <p className='cursor-pointer hover:text-primaryText underline' onClick={() => handleNavigate('/FAQ')}><FooterLinks text="About Us" /> </p>
+            <p className='cursor-pointer hover:text-primaryText underline' onClick={() => handleNavigate('/Partners')}><FooterLinks text="Referral Partners" /> </p> 
             </div>
           </div>
-        </div>
-
+        </div> 
         <div className='gap-5 flex flex-col'>
           <div className='flex gap-4 flex-col text-navText'>   
             <a className='hover:text-primaryText text-[16px] font-[600] text-navText' href='mailto:vic@2in1.com.au'><Email sx={{ width: '20px' }}/> vic@2in1.com.au</a>
@@ -72,7 +71,7 @@ function Footer() {
               <p className='text-navText text-[14px]'>5th flr Megalife Building,</p>
               <p className='text-navText text-[14px]'>Juan Luna, San Vicente, </p>
               <p className='text-navText text-[14px]'>Calapan, Philippines 5200</p>
-            </div> 
+            </div>
           </div>
         </div>
       </div> 

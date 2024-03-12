@@ -21,7 +21,7 @@ export default function Post3() {
     <p>
       <ul className='lg:ml-10 number-bullet  text-secondaryText gap-3 flex flex-col'>
         <li>
-          <span className='text-primaryText'>Lots of People Open Them:</span>
+          <span className='text-primaryText'>High Open Rate:</span>
           <p className='text-[16px] font-[600] tracking-wide leading-7 text-secondaryText'>When you send an SMS, a lot of people read it quickly. Studies say more than
             90% of text messages are opened in just a few minutes. This means your
             message is more likely to be seen by the people you want to see it.
@@ -71,12 +71,12 @@ export default function Post3() {
         </li>
       </ul>
     </p>
-    <p className='font-[500] tracking-wide leading-7 text-secondaryText'>Even though SMS marketing is great, it's important to use it in a good way and respect
+    <p className='font-[500] tracking-wide leading-7 text-secondaryText'>Even though SMS marketing is a very effective way in promoting your business, it's important to use it in a good way and respect
       people's privacy. Always ask for permission before sending SMS messages and give
       people the option to stop getting them. This helps make sure your SMS marketing is
       positive and follows the rules.
     </p>
-    <p className='font-[500] tracking-wide leading-7 text-secondaryText'>By the way, if you're looking for SMS Marketing, 2in1 promotions and Virtual solutions
+    <p className='font-[500] tracking-wide leading-7 text-secondaryText'>2in1 Promotions and VA Solutions
       can help your business grow. Just reach out to us, and we'll assist you in using SMS
       Marketing for your business.
     </p>
